@@ -1,0 +1,14 @@
+.bio{
+    color: red;
+    background-color: aqua;
+}
+
+#copy{
+    color: gold;
+    background-color: honeydew;
+}
+
+li > a{
+    color: green;
+    background-color: yellow;
+}
