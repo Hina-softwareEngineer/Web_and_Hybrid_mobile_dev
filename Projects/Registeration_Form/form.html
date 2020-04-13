@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registeration Form</title>
+
+    <link rel="stylesheet" href="./form.css">
+</head>
+<body>
+
+    <div class='container'>
+        <div class='image'>
+            <img src="Saylani-logo.png" alt="Saylani logo">
+        </div>
+    </div>
+
+    <h1>STUDENT REGISTRATION FORM</h1>
+
+    <form class="form" action="">
+        <label for='first-name'>
+            FIRST NAME
+        </label>
+        <input id='first-name' type="text" pattern='([A-Za-z ]{3,30})' placeholder="Enter First Name" title="Maximum 3-30 characters are allowed." required>
+
+        <label for='last-name'>
+            LAST NAME
+        </label>
+        <input id='last-name' type="text" pattern='([A-Za-z]{3,30})' placeholder="Enter Last Name" title="Maximum 3-30 characters are allowed." required>
+
+        <label for='date-of-birth'>
+            DATE OF BIRTH
+        </label>
+        <div id='date-of-birth'>
+        <select name='date' required>
+            <option selected> Day: </option>
+            <option>  1</option>
+            <option>  2</option>
+            <option>  3</option>
+            <option>  4</option>
+            <option>  5</option>
+            <option>  6</option>
+            <option>  7</option>
+            <option>  8</option>
+            <option>  9</option>
+            <option> 10</option>
+            <option> 11</option>
+            <option> 12</option>
+            <option> 13</option>
+            <option> 14</option>
+            <option> 15</option>
+            <option> 16</option>
+            <option> 17</option>
+            <option> 18</option>
+            <option> 19</option>
+            <option> 20</option>
+            <option> 21</option>
+            <option> 22</option>
+            <option> 23</option>
+            <option> 24</option>
+            <option> 25</option>
+            <option> 26</option>
+            <option> 27</option>
+            <option> 28</option>
+            <option> 29</option>
+            <option> 30</option>
+            <option> 31</option>
+
+		</select>
+        <select name='months' required>
+            <option selected> Month:  </option>
+            <option> Jan</option>
+            <option> Feb</option>
+            <option> Mar</option>
+            <option> Apr</option>
+            <option> May</option>
+            <option> Jun</option>
+            <option> Jul</option>
+            <option> Aug</option>
+            <option> Sep</option>
+            <option> Oct</option>
+            <option> Nov</option>
+            <option> Dec</option>
+
+        </select>
+        <select name='year' required>
+            <option selected> Year: </option>
+            <option>1990</option>
+            <option>1991</option>
+            <option>1992</option>
+            <option>1993</option>
+            <option>1994</option>
+            <option>1995</option>
+            <option>1996</option>
+            <option>1997</option>
+            <option>1998</option>
+            <option>1999</option>
+            <option>2000</option>
+            <option>2001</option>
+            <option>2002</option>
+            <option>2003</option>
+            <option>2004</option>
+            <option>2005</option>
+            <option>2006</option>
+            <option>2007</option>
+            <option>2008</option>
+            <option>2009</option>
+            <option>2010</option>
+            <option>2011</option>
+            <option>2012</option>
+            <option>2013</option>
+            <option>2014</option>
+            <option>2015</option>
+            <option>2016</option>
+            <option>2017</option>
+            <option>2018</option>
+            <option>2019</option>
+            <option>2020</option>
+
+        </select>
+        </div>
+
+        <label for="email">
+            Email:
+        </label>
+        <input id='email' type="email" placeholder="Enter email Address" title="Email must include @ and '.'" required>
+
+        <label for="phone">
+            Mobile Number:
+        </label>
+        <input id='phone' type="text" pattern="([0-9]{4})-([0-9]{7})" placeholder="Enter mobile number" title="Mobile Number must be in format xxxx-xxxxxxx" required>
+
+        <label for='gender'>
+            Gender: 
+        </label>
+        <div name='gender'>
+            <label for='male'>Male</label>
+            <input id='male' type='radio' name='gender1'>
+            <label for='female'>Female</label>
+            <input id='female' type="radio" name='gender1'>
+        </div>
+
+        <label for='address'>
+            Address:
+        </label>
+        <textarea id='address' placeholder="Enter your Address..."></textarea>
+
+        <label for='city'>CITY:</label>
+        <input id='city' type="text" pattern="([A-Za-z ]{3,30})" placeholder="Enter City Name">
+
+        <label for='pin-code'>
+            PIN CODE:
+        </label>
+        <input id='pin-code' type='number' pattern='[0-9]{6}' placeholder="Enter Pincode" required>
+
+        <label for='state'>STATE:</label>
+        <input id='state' type="text" pattern="([A-Za-z ]{3,30})" placeholder="Enter State">
+
+        <label for='country'>COUNTRY:</label>
+        <input id='country' type="text" pattern="([A-Za-z ]{3,30})" placeholder="Enter Country">
+
+        <label for='hobby'>HOBBIES:</label>
+        <div id='hobby'>
+            <label for="drawing">Drawing</label>
+            <input id='drawing' type="checkbox" >
+
+            <label for="Singing">Singing</label>
+            <input id='Singing' type="checkbox" >
+
+            <label for="Dancing">Dancing</label>
+            <input id='Dancing' type="checkbox" >
+
+            <label for="Sketching">Sketching</label>
+            <input id='Sketching' type="checkbox" >
+
+            <label for="Others">Others</label>
+            <input id='Others' type="checkbox" ><input type='text' placeholder="Mention your other hobbies...">
+        </div>
+
+            <label for="qualification">Qualification:</label>
+            <table id='qualification'>
+                <tr>
+                    <th>S.NO.</th>
+                    <th>Examination</th>
+                    <th>Board</th>
+                    <th>Percentage</th>
+                    <th>Year of Passing</th>
+                </tr>
+
+                <tr>
+                    <td>1-</td>
+                    <td>Class X</td>
+                    <td><input type='text' maxlength='10'></td>
+                    <td><input type='number' maxlength='4' step='.01'></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>2-</td>
+                    <td>Class XII</td>
+                    <td><input type='text' maxlength='10'></td>
+                    <td><input type='number' maxlength='4' step='.01'></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>3-</td>
+                    <td>Graduation</td>
+                    <td><input type='text' maxlength='10'></td>
+                    <td><input type='number' maxlength='4' step='.01'></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>4-</td>
+                    <td>Masters</td>
+                    <td><input type='text' maxlength='10'></td>
+                    <td><input type='number' maxlength='4' step='.01'></td>
+                    <td></td>
+                </tr>
+
+            </table>
+
+            <label for='courses'>
+                Courses Applied For:
+            </label>
+            <div id='courses'>
+                <label for='bca'>BCA</label>
+                <input id='bca' type="radio" name='course'>
+
+                <label for='bcom'>B.COM</label>
+                <input id='bcom' type="radio" name='course'>
+
+                <label for='bsc'>B.Sc</label>
+                <input id='bsc' type="radio" name='course'>
+
+                <label for='ba'>B.A</label>
+                <input id='ba' type="radio" name='course'>
+            </div>
+            
+               
+
+        <button value="submit">Submit</button>
+        <input type='reset' value='Reset'>
+
+    </form>
+
+
+</body>
+</html>
