@@ -11,13 +11,15 @@
 
     <div class='container'>
         <div class='image'>
-            <img src="Saylani-logo.png" alt="Saylani logo">
+            <img src="../Saylani-logo.png" alt="Saylani logo">
         </div>
-    </div>
+    
 
     <h1>STUDENT REGISTRATION FORM</h1>
 
-    <form class="form" action="">
+    
+    <form class="form" action="../afterSubmit/onSubmit.html">
+        <div class="formStyle">
         <label for='first-name'>
             FIRST NAME
         </label>
@@ -143,7 +145,7 @@
         <label for='address'>
             Address:
         </label>
-        <textarea id='address' placeholder="Enter your Address..."></textarea>
+        <textarea id='address' rows="5" placeholder="Enter your Address..."></textarea>
 
         <label for='city'>CITY:</label>
         <input id='city' type="text" pattern="([A-Za-z ]{3,30})" placeholder="Enter City Name">
@@ -163,24 +165,24 @@
         <div id='hobby'>
             <label for="drawing">Drawing</label>
             <input id='drawing' type="checkbox" >
-
+            <br>
             <label for="Singing">Singing</label>
             <input id='Singing' type="checkbox" >
-
+            <br>
             <label for="Dancing">Dancing</label>
             <input id='Dancing' type="checkbox" >
-
+            <br>
             <label for="Sketching">Sketching</label>
             <input id='Sketching' type="checkbox" >
-
+            <br>
             <label for="Others">Others</label>
-            <input id='Others' type="checkbox" ><input type='text' placeholder="Mention your other hobbies...">
+            <input id='Others' type="checkbox" ><input id='otherHobbies' type='text' placeholder="Mention your other hobbies...">
         </div>
 
             <label for="qualification">Qualification:</label>
             <table id='qualification'>
                 <tr>
-                    <th>S.NO.</th>
+                    <th>S.No.</th>
                     <th>Examination</th>
                     <th>Board</th>
                     <th>Percentage</th>
@@ -190,30 +192,30 @@
                 <tr>
                     <td>1-</td>
                     <td>Class X</td>
-                    <td><input type='text' maxlength='10'></td>
+                    <td><input type='text' maxlength='10' size='20'></td>
                     <td><input type='number' maxlength='4' step='.01'></td>
-                    <td></td>
+                    <td><input type='number' min='2010' max='2020'></td>
                 </tr>
                 <tr>
                     <td>2-</td>
                     <td>Class XII</td>
-                    <td><input type='text' maxlength='10'></td>
-                    <td><input type='number' maxlength='4' step='.01'></td>
-                    <td></td>
+                    <td><input type='text' maxlength='10' size='20'></td>
+                    <td><input type='number' step='.01' max-length='4'></td>
+                    <td><input type='number' min='2010' max='2020'></td>
                 </tr>
                 <tr>
                     <td>3-</td>
                     <td>Graduation</td>
-                    <td><input type='text' maxlength='10'></td>
+                    <td><input type='text' maxlength='10' size='20'></td>
                     <td><input type='number' maxlength='4' step='.01'></td>
-                    <td></td>
+                    <td><input type='number' min='2010' max='2020'></td>
                 </tr>
                 <tr>
                     <td>4-</td>
                     <td>Masters</td>
-                    <td><input type='text' maxlength='10'></td>
+                    <td><input type='text' maxlength='10' size='20'></td>
                     <td><input type='number' maxlength='4' step='.01'></td>
-                    <td></td>
+                    <td><input type='number' min='2010' max='2020'></td>
                 </tr>
 
             </table>
@@ -235,13 +237,12 @@
                 <input id='ba' type="radio" name='course'>
             </div>
             
-               
-
+        </div>
         <button value="submit">Submit</button>
-        <input type='reset' value='Reset'>
+        <input class='reset' type='reset' value='Reset'>
 
     </form>
-
+</div>
 
 </body>
 </html>

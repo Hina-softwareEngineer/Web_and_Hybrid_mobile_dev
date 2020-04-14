@@ -1,0 +1,64 @@
+body{
+
+    text-align: center;
+}
+
+.container{ 
+    position: relative;
+    margin: 0 auto;
+    margin-top: 100px; 
+    max-width: 500px;
+    
+}
+
+.tick{
+   
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 0 auto;
+    border: none;
+    /* border-color: green transparent transparent transparent; */
+    animation: circle 0.5s 0.5s forwards;
+    animation-iteration-count: 1;
+}
+
+@keyframes circle{
+    0%{
+        border: none;
+    }
+    5%{
+        border: 25px solid;
+        border-color: green transparent transparent transparent;
+    }
+    25%{
+        border-color: green green transparent transparent;
+    }
+    50%{
+        border-color: green green green  transparent;
+    }
+    75%{
+        border-color: green green green green;
+    }
+    100%{
+        border: 25px solid;
+        border-color: greenyellow;
+    }
+}
+
+span{
+    width: 100%;
+    margin: 0 auto;
+    font-size: 10rem;
+    position: absolute;
+    top:35px;
+    left: 5px;
+    animation: show 1s 0.9s forwards;
+    opacity: 0;
+}
+
+@keyframes show{
+    100%{
+        opacity: 1;
+    }
+}
