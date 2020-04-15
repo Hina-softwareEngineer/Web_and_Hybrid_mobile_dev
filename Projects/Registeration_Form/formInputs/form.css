@@ -7,6 +7,8 @@ body{
 .required, .red{
     font-size:14px; 
     color:red;
+    margin: 2px;
+    margin-top:4px;
 }
 
 
@@ -43,9 +45,13 @@ h1{
     grid-row-gap: 10px;
     
 }
-
 .formStyle > *{
+    margin-bottom: 10px;
+}
+
+div > input[type='text'], div > input[type='number'], div > input[type='email'] {
     padding: 10px 10px;
+    width: 100%;
 }
 
 label{

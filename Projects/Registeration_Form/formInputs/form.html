@@ -23,12 +23,17 @@
         <label for='first-name'>
             FIRST NAME<sup class='required'>*</sup>
         </label>
+        <div>
         <input id='first-name' type="text" pattern='([A-Za-z ]{3,30})' placeholder="Enter First Name" title="Maximum 3-30 characters are allowed." required>
+        <br>
+        <p  class='red'>Maximum 30 characters a-z and A-Z are allowed.</p></div>
 
         <label for='last-name'>
             LAST NAME<sup class='required'>*</sup>
         </label>
+        <div>
         <input id='last-name' type="text" pattern='([A-Za-z ]{3,30})' placeholder="Enter Last Name" title="Maximum 3-30 characters are allowed." required>
+        <p  class='red'>Maximum 30 characters a-z and A-Z are allowed.</p></div>
 
         <label for='date-of-birth'>
             DATE OF BIRTH<sup class='required'>*</sup>
@@ -130,8 +135,9 @@
         <label for="phone">
             Mobile Number<sup class='required'>*</sup>
         </label>
+        <div>
         <input id='phone' type="text" pattern="([0-9]{4})-([0-9]{7})" placeholder="Enter mobile number" title="Mobile Number must be in format xxxx-xxxxxxx" required>
-
+        <p  class='red'>11 digit Number in format xxxx-xxxxxxx</p></div>
         <label for='gender'>
             Gender:<sup class='required'>*</sup>
         </label>
@@ -148,15 +154,21 @@
         <textarea id='address' rows="5" title='Enter your Address' placeholder="Enter your Address..." required></textarea>
 
         <label for='city'>CITY<sup class='required'>*</sup></label>
+        <div>
         <input id='city' type="text" pattern="([A-Za-z ]{3,30})" required title='Enter your city name' placeholder="Enter City Name">
+        <p  class='red'>Maximum 30 characters a-z and A-Z are allowed.</p></div>
 
         <label for='pin-code'>
             PIN CODE:
         </label>
-        <input id='pin-code' type='number' pattern='[0-9]{6}' placeholder="Enter Pincode" title='Enter pin code'>
+        <div>
+        <input id='pin-code' type='number' max='000000' min='999999' placeholder="Enter Pincode" title='Enter pin code'>
+        <p  class='red'>6 digit Number</p></div>
 
         <label for='state'>STATE:</label>
+        <div>
         <input id='state' type="text" pattern="([A-Za-z ]{3,30})" placeholder="Enter State" title='Enter State'>
+        <p  class='red'>Maximum 30 characters a-z and A-Z are allowed</p></div>
 
         <label for='country'>COUNTRY<sup class='required'>*</sup></label>
         <input id='country' type="text" pattern="([A-Za-z ]{3,30})" placeholder="Enter Country" required title='Enter Country 3-30 characters maximum'>
@@ -216,6 +228,13 @@
                     <td><input type='text' maxlength='10' size='20'></td>
                     <td><input type='number' maxlength='4' step='.01'></td>
                     <td><input type='number' min='2010' max='2020'></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><p  class='red'>(10 characters maximum.)</p></td>
+                    <td><p  class='red'>(Upto 2 decimals)</p></td>
+                    
                 </tr>
 
             </table>
