@@ -6,7 +6,7 @@ body{
 
 .required, .red{
     font-size:14px; 
-    color:red;
+    color:#E74C3C ;
     margin: 2px;
     margin-top:4px;
 }

@@ -1,5 +1,8 @@
-body{
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Cinzel+Decorative&family=Comic+Neue:wght@700&display=swap');
 
+
+body{
+    font-family: monospace;
     text-align: center;
 }
 
@@ -29,20 +32,30 @@ body{
     }
     5%{
         border: 25px solid;
-        border-color: green transparent transparent transparent;
+        border-color: #28B463 transparent transparent transparent;
     }
-    25%{
-        border-color: green green transparent transparent;
+    20%{
+        border-color: #28B463 #28B463 transparent transparent;
     }
-    50%{
-        border-color: green green green  transparent;
+    40%{
+        border-color: #28B463 #28B463 #28B463  transparent;
+    }
+    60%{
+        border-color: #28B463 #28B463 #28B463 #28B463;
+    }
+    70%{
+        
+        border-color: #2ECC71 ;
     }
     75%{
-        border-color: green green green green;
+    border-color:#117864;
+    }
+    94%{
+        border-color:#117864;s
     }
     100%{
         border: 25px solid;
-        border-color: greenyellow;
+        border-color: #2ECC71 ;
     }
 }
 
@@ -52,6 +65,7 @@ span{
     font-size: 10rem;
     position: absolute;
     top:35px;
+    color: #2ECC71;
     left: 5px;
     animation: show 1s 0.9s forwards;
     opacity: 0;
@@ -61,4 +75,47 @@ span{
     100%{
         opacity: 1;
     }
+}
+
+h2{
+    font-size: 3rem;
+    font-family: 'Cinzel Decorative', cursive;
+    margin-bottom: 10px;
+    animation: show 1s 1.2s forwards;
+    opacity: 0;
+}
+
+h3{
+    font-family: 'Comic Neue', cursive;
+    font-size: 2rem;
+    margin:0px;
+    margin-bottom: 10px;
+    animation: show 1s 1.2s forwards;
+    opacity: 0;
+}
+
+p{
+    font-family: 'Caveat', cursive;
+    font-size: 28px;
+    animation: show 1s 1.5s forwards;
+    opacity: 0;
+}
+
+button{
+    font-family: 'Comic Neue', cursive;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 15px 15px;
+    cursor: pointer;
+    width: 150px;
+    color: white;
+    border: none;
+    animation: show 1s 1.5s forwards;
+    opacity: 0;
+    background: linear-gradient(90deg, #0072ff 0%, #00d4ff 100%)
+}
+
+button:focus{
+    outline:none;
 }
