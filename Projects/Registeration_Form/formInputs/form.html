@@ -21,17 +21,17 @@
     <form class="form" action="../afterSubmit/onSubmit.html">
         <div class="formStyle">
         <label for='first-name'>
-            FIRST NAME
+            FIRST NAME<sup class='required'>*</sup>
         </label>
         <input id='first-name' type="text" pattern='([A-Za-z ]{3,30})' placeholder="Enter First Name" title="Maximum 3-30 characters are allowed." required>
 
         <label for='last-name'>
-            LAST NAME
+            LAST NAME<sup class='required'>*</sup>
         </label>
-        <input id='last-name' type="text" pattern='([A-Za-z]{3,30})' placeholder="Enter Last Name" title="Maximum 3-30 characters are allowed." required>
+        <input id='last-name' type="text" pattern='([A-Za-z ]{3,30})' placeholder="Enter Last Name" title="Maximum 3-30 characters are allowed." required>
 
         <label for='date-of-birth'>
-            DATE OF BIRTH
+            DATE OF BIRTH<sup class='required'>*</sup>
         </label>
         <div id='date-of-birth'>
         <select name='date' required>
@@ -123,43 +123,43 @@
         </div>
 
         <label for="email">
-            Email:
+            Email<sup class='required'>*</sup>
         </label>
         <input id='email' type="email" placeholder="Enter email Address" title="Email must include @ and '.'" required>
 
         <label for="phone">
-            Mobile Number:
+            Mobile Number<sup class='required'>*</sup>
         </label>
         <input id='phone' type="text" pattern="([0-9]{4})-([0-9]{7})" placeholder="Enter mobile number" title="Mobile Number must be in format xxxx-xxxxxxx" required>
 
         <label for='gender'>
-            Gender: 
+            Gender:<sup class='required'>*</sup>
         </label>
-        <div name='gender'>
+        <div name='gender' >
             <label for='male'>Male</label>
-            <input id='male' type='radio' name='gender1'>
+            <input id='male' type='radio' name='gender1' required checked='checked'>
             <label for='female'>Female</label>
-            <input id='female' type="radio" name='gender1'>
+            <input id='female' type="radio" name='gender1' required>
         </div>
 
         <label for='address'>
-            Address:
+            Address<sup class='required'>*</sup>
         </label>
-        <textarea id='address' rows="5" placeholder="Enter your Address..."></textarea>
+        <textarea id='address' rows="5" title='Enter your Address' placeholder="Enter your Address..." required></textarea>
 
-        <label for='city'>CITY:</label>
-        <input id='city' type="text" pattern="([A-Za-z ]{3,30})" placeholder="Enter City Name">
+        <label for='city'>CITY<sup class='required'>*</sup></label>
+        <input id='city' type="text" pattern="([A-Za-z ]{3,30})" required title='Enter your city name' placeholder="Enter City Name">
 
         <label for='pin-code'>
             PIN CODE:
         </label>
-        <input id='pin-code' type='number' pattern='[0-9]{6}' placeholder="Enter Pincode" required>
+        <input id='pin-code' type='number' pattern='[0-9]{6}' placeholder="Enter Pincode" title='Enter pin code'>
 
         <label for='state'>STATE:</label>
-        <input id='state' type="text" pattern="([A-Za-z ]{3,30})" placeholder="Enter State">
+        <input id='state' type="text" pattern="([A-Za-z ]{3,30})" placeholder="Enter State" title='Enter State'>
 
-        <label for='country'>COUNTRY:</label>
-        <input id='country' type="text" pattern="([A-Za-z ]{3,30})" placeholder="Enter Country">
+        <label for='country'>COUNTRY<sup class='required'>*</sup></label>
+        <input id='country' type="text" pattern="([A-Za-z ]{3,30})" placeholder="Enter Country" required title='Enter Country 3-30 characters maximum'>
 
         <label for='hobby'>HOBBIES:</label>
         <div id='hobby'>
@@ -179,7 +179,7 @@
             <input id='Others' type="checkbox" ><input id='otherHobbies' type='text' placeholder="Mention your other hobbies...">
         </div>
 
-            <label for="qualification">Qualification:</label>
+            <label for="qualification">Qualification<sup class='required'>*</sup></label>
             <table id='qualification'>
                 <tr>
                     <th>S.No.</th>
@@ -192,14 +192,14 @@
                 <tr>
                     <td>1-</td>
                     <td>Class X</td>
-                    <td><input type='text' maxlength='10' size='20'></td>
-                    <td><input type='number' maxlength='4' step='.01'></td>
-                    <td><input type='number' min='2010' max='2020'></td>
+                    <td><input type='text' maxlength='10' size='20' required></td>
+                    <td><input type='number' maxlength='4' step='.01' required></td>
+                    <td><input type='number' min='2010' max='2020' required></td>
                 </tr>
                 <tr>
                     <td>2-</td>
                     <td>Class XII</td>
-                    <td><input type='text' maxlength='10' size='20'></td>
+                    <td><input type='text' maxlength='10' size='20' ></td>
                     <td><input type='number' step='.01' max-length='4'></td>
                     <td><input type='number' min='2010' max='2020'></td>
                 </tr>
@@ -225,7 +225,7 @@
             </label>
             <div id='courses'>
                 <label for='bca'>BCA</label>
-                <input id='bca' type="radio" name='course'>
+                <input id='bca' type="radio" name='course' required>
 
                 <label for='bcom'>B.COM</label>
                 <input id='bcom' type="radio" name='course'>
@@ -238,8 +238,15 @@
             </div>
             
         </div>
+        <br>
+        <br>
+        <br>
+        <p  class='red'>' * ' are the required fields.</p>
+        <br>
+        <div>
         <button value="submit">Submit</button>
         <input class='reset' type='reset' value='Reset'>
+    </div>
 
     </form>
 </div>

@@ -1,7 +1,14 @@
 
 body{
     margin:0 auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+.required, .red{
+    font-size:14px; 
+    color:red;
+}
+
 
 .image{
     width: 100%;
@@ -17,6 +24,15 @@ body{
 
 h1{
     text-align: center;
+    font-size: 3rem;
+    color:  #F0F3F4 ;
+    border-radius: 5px;
+    background: linear-gradient(90deg, rgba(0,97,255,1) 2%, rgba(8,167,253,1) 52%, rgba(23,94,249,1) 100%);
+    
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* background: rgb(24,255,76);
+    background: linear-gradient(90deg, rgba(24,255,76,0.8) 0%, rgba(0,140,255,1) 51%, rgba(23,249,86,0.8) 100%); */
 }
 
 
@@ -25,6 +41,7 @@ h1{
     grid-template-columns: 25% 75%;
     grid-column-gap: 20px;
     grid-row-gap: 10px;
+    
 }
 
 .formStyle > *{
@@ -33,15 +50,23 @@ h1{
 
 label{
     font-size: 20px;
+    color: #273746 ;
     text-transform: uppercase;
     margin-left: 15px;
 }
 
 input, textarea{
     font-size: 18px;
-    
-    border: 1px solid orangered;
+    color: #212F3D ;
+    border: 1px solid lightgrey;
     border-radius: 3px;
+}
+
+input:focus, textarea:focus{
+    outline:none;
+    background-color: #F7F9F9 ;
+    border: 2px solid #5DADE2;
+    
 }
 
 #otherHobbies{
@@ -74,7 +99,7 @@ input[type='radio']:after {
     position: relative;
     display: inline-block;
     background-color: whitesmoke;
-    border: 5px solid green;
+    border: 2px solid #5DADE2;
     visibility: visible;
     content:'';
 }
@@ -87,8 +112,7 @@ input[type='radio']:checked:after {
     top: -3px;
     position: relative;
     display: inline-block;
-    background-color: red;
-    border: 5px solid green;
+    background-color: #AED6F1 ;
     visibility: visible;
     content:'';
 }
@@ -114,9 +138,10 @@ input[type='checkbox']:after{
     left: -1px;
     top: -2px;
     position: relative;
+    border-radius: 3px;
     display: inline-block;
     background-color: whitesmoke;
-    border: 2px solid green;
+    border: 2px solid #5DADE2;
     visibility: visible;
     content:'';
 }
@@ -125,12 +150,19 @@ input[type='checkbox']:checked:after{
     top:-3px;
     content:'\2714';
     font-size:12px;
-    color: red;
+    background-color: #5DADE2;
+    color: whitesmoke;
     text-align: center;
 }
 
 table{
     border: 1px solid lightgray;
+    border-radius: 5px;
+}
+
+th{
+    font-size: 16px;
+    color: #626567 ;
 }
 
 td > input{
@@ -142,7 +174,6 @@ td:nth-child(4) > input{
 }
 
 
-
 button, .reset{
     font-size: 18px;
     background-color: #1a73e8;
@@ -150,6 +181,7 @@ button, .reset{
     border: none;
     color: white;
     border-radius: 5px;
+    
 }
 button:focus{
     outline: none;
