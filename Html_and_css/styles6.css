@@ -1,0 +1,68 @@
+h1::first-letter{
+    font-size: 5rem;
+    text-shadow: 12px 4px 12px blueviolet;
+}
+
+p::first-line{
+    font-size: 24px;
+}
+
+a:link{
+    color:orange;
+}
+
+a:visited{
+    color:green;
+    font-size: 20px;
+}
+
+input:hover{
+    background-color: chartreuse;
+}
+
+input:focus {
+    background-color: crimson;
+}
+
+button:active{
+    background-color: cyan;
+}
+/* 
+p[class]{
+    color: purple;
+}
+
+p[class='cat']{
+    color: lightblue;
+}
+
+p[class~='cat']{
+    color: blue;
+} */
+
+p[attr^='cat']{
+    color: red;
+}
+
+div{
+    max-width: 700px;
+    border: 2px solid green;
+    min-width: 200px;
+    height: 200px;
+    border: 2px solid cyan;
+    overflow: scroll;
+    box-shadow: 3px 3px 3px blue;
+}
+
+img{
+    width: 100%;
+}
+
+li{
+    list-style-image: url();
+    list-style-position: inside;
+}
+
+ol{
+    list-style: lower-alpha;
+}
