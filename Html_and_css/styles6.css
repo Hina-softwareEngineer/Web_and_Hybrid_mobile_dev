@@ -59,7 +59,7 @@ img{
 }
 
 li{
-    list-style-image: url();
+    list-style-image: url("");
     list-style-position: inside;
 }
 

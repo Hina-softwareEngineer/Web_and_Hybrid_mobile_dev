@@ -1,0 +1,61 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* tr.even{
+    background-color: lightblue;
+}
+
+tr:hover{
+    background-color: blue;
+}
+
+th,tr{
+    background-color: lightgray;
+}
+th,td{
+    padding: 10px;
+    border: 1px solid grey;
+}
+
+table{
+    width: 600px;
+    margin: 10px auto;
+    border-spacing : 5px 10px; /* column space , row space
+    border: 2px solid green;
+    border-radius: 5px;
+    empty-cells: hide;
+} */
+
+
+form{
+    padding: 10px;
+    width: 500px;
+    margin: 10px auto;
+}
+
+input{
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+}
+
+input.email{
+    background-image: url('');
+    background-size: 20px;
+}
+
+input:focus{
+    border-color : royalblue;
+}
+
+button{
+    padding: 10px;
+    margin: 5px;
+    font-size: 24px;
+    border:none;
+    background-color: royalblue;
+    color:white;
+    border-radius: 5px;
+    
+}
