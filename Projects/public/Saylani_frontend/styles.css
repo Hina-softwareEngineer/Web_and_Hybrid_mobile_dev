@@ -1,3 +1,237 @@
-h1{
-    color : red;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
 }
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+}
+
+
+ /* HEADER STYLING */
+
+.header{
+    background-color: #08AEEA;
+    background-image: linear-gradient(90deg, #08AEEA 0%, #2AF598 100%);
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 60px;
+}
+
+.social-media-icons > .fa{
+    font-size: 28px;
+    text-decoration: none;
+    margin: 10px 5px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+}
+
+.social-media-icons > .fa-facebook{
+    background: #3B5998;
+    color : white;
+}
+
+.social-media-icons > .fa-twitter{
+    background: #55ACEE;
+    color: white;
+}
+
+.social-media-icons > .fa-instagram{
+    color: white;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+
+}
+
+.social-media-icons > .fa-youtube{
+    background: #bb0000;
+    color: white;
+}
+
+.social-media-icons > .fa-whatsapp{
+    background: #25d366;
+    color : white;
+}
+
+.donation-buttons > button{
+    font-size: 20px;
+    width: 150px;
+    height: 45px;
+    margin: 10px 5px;
+    padding:5px;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+    background-color: #076AF9;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 1.2px;
+}
+
+.donation-buttons > button:hover{
+    opacity: 0.9;
+    background-color: #024DE4 ;
+    box-shadow: 0px 0px 3px grey;
+}
+
+button:focus{
+    outline :none;
+}
+
+
+
+
+ /* LOGO AND NAVBAR STYLING */
+
+.navigation{
+    padding-top: 10px;
+    background-color: whitesmoke;
+    padding: 0px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigation > img{
+    width: 250px;
+}
+
+.navigation > nav{
+    font-size: 16px;  
+    font-weight: 600;  
+}
+
+nav > a{
+    padding: 10px 10px;
+    border-radius: 5px;
+    color: #1E8449 ;
+    margin: 0px 5px
+}
+
+nav > a:hover{
+   color: white;
+   background: rgb(77,126,232);
+background: linear-gradient(0deg, rgba(77,126,232,1) 0%, rgba(87,252,58,1) 100%);
+}
+
+
+
+
+
+ /* SLIDER IMAES */
+
+ .main-image{
+     position: relative;
+ }
+
+ .slider-image{
+    width: 100%;
+    height: 600px;  
+    position: relative;   
+}
+
+.slider-image > .black-sheet{
+    position: absolute;
+    top:0;
+    opacity: 0.8;
+    background: black;
+    width: inherit;
+    height: inherit;
+}
+
+.slider-image > img{
+    overflow: hidden;
+    width: inherit;
+    height: inherit;
+}
+
+.main-image > h1{
+    word-spacing: 12px;
+    font-size : 3em;
+    position: absolute;
+    top:20%;
+    left: 125px;
+    max-width: 650px;
+    color : #ECF0F1 ;
+}
+
+.main-image > .leftarrow{
+    position: absolute;
+    top:50%;
+    left: 30px;
+    background-color: lightslategrey;
+    width: 50px;
+    height: 50px;
+    color: #B3B6B7;
+    border-radius: 50%;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.leftarrow > p, .rightarrow > p{
+    margin: 0;
+    padding-top:5px;
+}
+
+.main-image > .rightarrow{
+    position: absolute;
+    background-color: lightslategrey;
+    top:50%;
+    width: 50px;
+    height: 50px;
+    right: 30px;
+    color: #B3B6B7;
+    border-radius: 50%;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+
+
+
+
+/* MARQUEE */
+
+.marquee{
+    background-color: #2ECC71 ;
+    color : #1B4F72;
+    font-weight: 600;
+    padding: 5px 40px;
+    position: relative;
+}
+
+.marquee > marquee::before {
+    content: "🇵🇰";
+    font-size: 24px;
+    position: absolute;
+    top:1%;
+    left: 5px;
+}
+
+.marquee > marquee::after {
+    content: "🇵🇰";
+    font-size: 24px;
+    position: absolute;
+    top:1%;
+    right: 5px;
+}
+
+.marquee > marquee > span{
+    color : white;
+}
+
+.marquee > marquee > a{
+    color : #21618C ;
+}
+
+
