@@ -118,12 +118,123 @@ nav > a{
     margin: 0px 5px
 }
 
-nav > a:hover{
+nav > a:hover {
    color: white;
    background: rgb(77,126,232);
-background: linear-gradient(0deg, rgba(77,126,232,1) 0%, rgba(87,252,58,1) 100%);
+   background: linear-gradient(0deg, rgba(77,126,232,1) 0%, rgba(87,252,58,1) 100%);
 }
 
+
+
+/* DROPDOWN */
+
+nav{
+    position: relative;
+}
+
+/* #about:hover + .dropdown-menu{
+    opacity: 1;
+}
+  */
+
+
+.about + .dropdown-menu{
+    border-radius: 5px;
+    width: 200px;
+    background-color: green;
+    position: absolute;
+    top: 40px;
+    left : 20px;
+    z-index: 1;
+    opacity: 1;
+}
+
+nav > .about + .dropdown-menu::before{
+    content: ' ';
+    position: absolute;
+    top: -10px;
+    left: 45%;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom : 10px solid green;
+}
+
+.services + .dropdown-menu{
+    border-radius: 5px;
+    width: 200px;
+    background-color: green;
+    position: absolute;
+    top: 40px;
+    left : 160px;
+    z-index: 1;
+    opacity: 1;
+}
+
+nav > .services + .dropdown-menu::before{
+    content: ' ';
+    position: absolute;
+    top: -10px;
+    left: 45%;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom : 10px solid green;
+}
+
+.projects + .dropdown-menu{
+    border-radius: 5px;
+    width: 200px;
+    background-color: green;
+    position: absolute;
+    top: 40px;
+    left : 320px;
+    z-index: 1;
+    opacity: 1;
+}
+
+nav > .projects + .dropdown-menu::before{
+    content: ' ';
+    position: absolute;
+    top: -10px;
+    left: 45%;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom : 10px solid green;
+}
+
+.donation + .dropdown-menu{
+    border-radius: 5px;
+    width: 200px;
+    background-color: green;
+    position: absolute;
+    top: 40px;
+    left : 620px;
+    z-index: 1;
+    opacity: 1;
+}
+
+nav > .donation + .dropdown-menu::before{
+    content: ' ';
+    position: absolute;
+    top: -10px;
+    left: 45%;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom : 10px solid green;
+}
+
+
+.dropdown-menu > ul{
+    padding: 0px 15px;
+    font-size: 16px;
+}
+
+.dropdown-menu > ul > li{
+    margin: 15px 2px;
+}
+
+ul > li > a{
+    color: white;
+}
 
 
 
@@ -160,7 +271,7 @@ background: linear-gradient(0deg, rgba(77,126,232,1) 0%, rgba(87,252,58,1) 100%)
     font-size : 3em;
     position: absolute;
     top:20%;
-    left: 125px;
+    left: 200px;
     max-width: 650px;
     color : #ECF0F1 ;
 }
@@ -203,7 +314,7 @@ background: linear-gradient(0deg, rgba(77,126,232,1) 0%, rgba(87,252,58,1) 100%)
 /* MARQUEE */
 
 .marquee{
-    background-color: #2ECC71 ;
+    background-color: rgb(13, 245, 44) ;
     color : #1B4F72;
     font-weight: 600;
     padding: 5px 40px;
@@ -233,5 +344,130 @@ background: linear-gradient(0deg, rgba(77,126,232,1) 0%, rgba(87,252,58,1) 100%)
 .marquee > marquee > a{
     color : #21618C ;
 }
+
+
+
+
+ /* INTRODUCTION */
+
+.introduction{
+    text-align: justify;
+    max-width: 900px;
+    margin: 80px auto;
+}
+
+.introduction > h1, .title-image{
+    text-align: center;
+}
+
+.introduction > h1{
+    font-size: 3.4em;
+    margin: 20px 0px;
+    letter-spacing: 2.5px;
+    color : blue;
+}
+.title-image{
+    position: relative;
+}
+
+.title-image::before{
+    content: "";
+    width: 50px;
+    border-bottom: 3px solid green;
+    position: absolute;
+    top:45%;
+    left: 40%;
+}
+
+.title-image::after{
+    content: "";
+    width: 50px;
+    border-bottom: 3px solid green;
+    position: absolute;
+    top:45%;
+    left:55%;
+}
+
+.introduction > div > p{
+    line-height: 1.5;
+    letter-spacing: 1.1px;
+}
+
+
+
+ /* STATISTICS */
+
+.statistics{
+    margin: 10px 0px;
+    padding: 30px 0px;
+    background-color: red;  
+    display: flex;
+    justify-content: space-around;  
+}
+
+.food, .family, .medical, .education{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.food > img, .family > img{
+    width: 100px;
+    height: 100px;
+}
+
+.medical > i, .education > i{
+    margin: 5px;
+    color : white;
+    font-size: 6em;
+}
+
+statistics > div >h2{
+    font-size: 2.5em;
+    padding-top: 20px;
+    margin:0;
+    color : white;
+}
+
+.statistics > div > p{
+    font-size: 20px;
+    margin: 5px 0px;
+}
+
+.statistics > div > p > span{
+    font-size: 30px;
+    margin: 5px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
