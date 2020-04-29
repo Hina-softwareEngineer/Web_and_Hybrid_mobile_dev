@@ -361,7 +361,7 @@ ul > li > a{
 }
 
 .introduction > h1{
-    font-size: 3.4em;
+    font-size: 3em;
     margin: 20px 0px;
     letter-spacing: 2.5px;
     color : blue;
@@ -422,7 +422,7 @@ ul > li > a{
     font-size: 6em;
 }
 
-statistics > div >h2{
+.statistics > div >h2{
     font-size: 2.5em;
     padding-top: 20px;
     margin:0;
@@ -441,6 +441,126 @@ statistics > div >h2{
 
 
 
+/* WORKING */
+
+.working > h2, .working .title-image, .boxes{
+    text-align: center;
+}
+
+.working > h2{
+    font-size: 2.5em;
+    color : blue;
+}
+
+.boxes {
+    display: flex;
+    margin: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.box{
+    width: 420px;
+    margin: 5px 20px;
+    background-color: red;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.box > h3{
+    font-size: 1.5em;
+    color: white;
+}
+
+
+
+/* MISSON AND UPCOMING */
+
+.container{
+    padding: 0px 50px;
+    background-color: khaki;
+}
+
+.container h2{
+    font-size: 2.2em;
+}
+
+
+.two-containers{
+    display: flex;
+    justify-content: space-around;
+}
+
+.mission{
+    width: 900px;
+    display:  flex;
+    flex-wrap: wrap;
+    background-color: white;
+}
+
+.sub-mission {
+    height: 70px;
+    width: 350px;
+    margin: 5px 15px;
+    padding: 5px 25px;
+    display: flex;
+    align-items: center;
+    background-color: yellow;
+}
+
+.sub-mission > h4{
+    margin: 5px 30px;
+}
+
+
+
+.upcoming-events > marquee{
+    margin: 0 20px;
+    width: 300px;
+    padding: 5px 0px
+}
+
+
+
+
+/* IMAGE GALLERY */
+
+.gallery {
+    background-color: lightblue;
+    margin-top: 100px;
+    max-width: 1400px;
+}
+
+.gallery > h2{
+    text-align: center;
+}
+
+.image-gallery{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 50px 30px;
+}
+
+.image-gallery > div{
+    margin : 10px 10px;
+    padding: 5px;
+    width: 415px;
+    height: 250px;
+    background-color: red;
+}
+
+.image-gallery > div >  img{
+    width: 100%;
+    height: inherit;
+}
+
+.image-gallery > .big{
+    flex : 25%;
+    height: 350px;
+}
 
 
 
@@ -448,24 +568,35 @@ statistics > div >h2{
 
 
 
+/* FOOTER */
 
+footer{
+    margin-top: 150px;
+    background-color: mediumslateblue;
+    padding: 100px 200px;
+}
 
+.footer-part1{
+    display: flex;
+}
 
+.useful-links{
+    flex: 50%;
+}
 
+.social-links{
+    flex : 50%;
+}
 
+.useful-links > div{
+    background-color: red;
+    display: flex;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+.useful-links > div > p:nth-child(2){
+    background-color: yellow;
+    margin-left: 50px;
+}
 
 
 
