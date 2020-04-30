@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
 
 body{
     margin: 0;
@@ -14,18 +15,33 @@ li{
 }
 
 .arrow-down{
-    width: 100px;
-    height: 100px;
-    background-color: red;
+    width: 80px;
+    height: 80px;
+    font-size: 2em;
     z-index: 12;
     position: fixed;
     bottom: 0;
     right: 0;
 }
 
-/* .arrow-down > a{
-    position: fixed;
-} */
+.arrow-down > a{
+    color: #024DE4;
+    padding: 5px 10px;
+    background-color: #55ACEE;
+    border-radius: 50%;
+}
+
+.arrow-down > a > i{
+    transform: translate(0,-2px);
+    transition: all 0.5s;    
+}
+
+.arrow-down > a:hover  i{
+    color: #2AF598;
+    transform: translate(0px ,-10px);
+}
+
+
 
  /* HEADER STYLING */
 
@@ -47,6 +63,13 @@ li{
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 50%;
+}
+
+.fa{
+    transition: all 0.5s;
+}
+.fa:hover{
+    transform: scale(1.2, 1.2);
 }
 
 .fa-facebook{
@@ -122,45 +145,40 @@ button:focus{
 .navigation > nav{
     font-size: 16px;  
     font-weight: 600;  
-    background-color: red;
 }
 
-.navigation > nav > li{
-    display: inline-block;
-    padding: 20px 10px;
-    color: grey ;
-    background-color: gold;
-    margin: 0px 5px;
-}
 
-nav > li {
+nav > a{
     position: relative;
     padding: 20px 10px;
-    color: #1E8449 ;
-    background-color: yellow;
+    margin: 0px 5px;
+    color: green ;
 }
 
-nav > li :before{
+nav > a:before{
     content:"";
-
-    background-color: black;
+    background-color: transparent;
     position: absolute;
-    top:0px;
-    left:-5px;
+    top: -3px;
+    left: 0px;
     width: 100%;
     height: 4px;
-    transform: scaleX(0);
-    transform-origin: center;
-    transition: transform 0.5s;
+    transform-origin: top;
+    transition: background-color 0.5s;
 }
 
-nav > li :hover:before{
-    transform: scaleX(1);
-    transform-origin: center;
-   /* color: white;
-   background: rgb(77,126,232);
-   background: linear-gradient(0deg, rgba(77,126,232,1) 0%, rgba(87,252,58,1) 100%); */
+nav > a:hover:before {
+    background-color: #236D07 ; 
+    transform-origin: bottom; 
 }
+
+nav > a:hover + .dropdown-menu {
+    transform-origin: top center;
+    opacity: 1;
+    transform: scaleY(1) ;
+}
+
+
 
 
 
@@ -170,12 +188,6 @@ nav{
     position: relative;
 }
 
-/* #about:hover + .dropdown-menu{
-    opacity: 1;
-}
-  */
-
-
 .about + .dropdown-menu{
     border-radius: 5px;
     width: 200px;
@@ -184,7 +196,10 @@ nav{
     top: 40px;
     left : 20px;
     z-index: 1;
-    opacity: 1;
+    opacity: 0;
+    transition: all 0.5s;
+    transform-origin: top;
+    transform: scaleY(0);
 }
 
 .about + .dropdown-menu::before{
@@ -205,7 +220,10 @@ nav{
     top: 40px;
     left : 160px;
     z-index: 1;
-    opacity: 1;
+    opacity: 0;
+    transition: all 0.5s;
+    transform-origin: top;
+    transform: scaleY(0);
 }
 
 .services + .dropdown-menu::before{
@@ -226,7 +244,10 @@ nav{
     top: 40px;
     left : 320px;
     z-index: 1;
-    opacity: 1;
+    opacity: 0;
+    transition: all 0.5s;
+    transform-origin: top;
+    transform: scaleY(0);
 }
 
 .projects + .dropdown-menu::before{
@@ -247,7 +268,10 @@ nav{
     top: 40px;
     left : 620px;
     z-index: 1;
-    opacity: 1;
+    opacity: 0;
+    transition: all 0.5s;
+    transform-origin: top;
+    transform: scaleY(0);
 }
 
 .donation + .dropdown-menu::before{
@@ -271,7 +295,7 @@ nav{
 }
 
 ul > li > a{
-    color: white;
+    color: whitesmoke;
 }
 
 
@@ -318,13 +342,21 @@ ul > li > a{
     position: absolute;
     top:50%;
     left: 30px;
-    background-color: lightslategrey;
+    background-color: #ECF0F1;
     width: 50px;
     height: 50px;
     color: #B3B6B7;
     border-radius: 50%;
     font-size: 1.5em;
     text-align: center;
+    opacity: 0.7;
+    transform: scale(1, 1);
+    transition: all 0.5s;
+}
+
+.leftarrow:hover {
+    transform: scale(1.3, 1.3);
+    opacity: 1;
 }
 
 .leftarrow > p, .rightarrow > p{
@@ -334,7 +366,7 @@ ul > li > a{
 
 .main-image > .rightarrow{
     position: absolute;
-    background-color: lightslategrey;
+    background-color: #ECF0F1;
     top:50%;
     width: 50px;
     height: 50px;
@@ -343,8 +375,15 @@ ul > li > a{
     border-radius: 50%;
     font-size: 1.5em;
     text-align: center;
+    opacity: 0.7;
+    transform: scale(1, 1);
+    transition: all 0.5s;
 }
 
+.rightarrow:hover{
+    transform: scale(1.3, 1.3);
+    opacity: 1;
+}
 
 
 
@@ -438,7 +477,8 @@ ul > li > a{
 .statistics{
     margin: 10px 0px;
     padding: 30px 0px;
-    background-color: red;  
+    background: rgb(77,94,232);
+background: linear-gradient(180deg, rgba(77,94,232,1) 0%, rgba(77,225,93,1) 100%);  
     display: flex;
     justify-content: space-around;  
 }
@@ -452,6 +492,11 @@ ul > li > a{
 .food > img, .family > img{
     width: 100px;
     height: 100px;
+    transition: all 0.5s;
+}
+
+.food > img:hover, .family > img:hover{
+    transform: scale(1.2, 1.2);
 }
 
 .medical > i, .education > i{
@@ -464,6 +509,8 @@ ul > li > a{
     font-size: 2.5em;
     padding-top: 20px;
     margin:0;
+    font-weight: 500;
+    font-family: 'Merriweather', serif;
     color : white;
 }
 
@@ -475,6 +522,8 @@ ul > li > a{
 .statistics > div > p > span{
     font-size: 30px;
     margin: 5px 0px;
+    font-weight: 600;
+    color: #ABEBC6 ;
 }
 
 
@@ -499,12 +548,19 @@ ul > li > a{
 
 .box{
     width: 420px;
-    margin: 5px 20px;
-    background-color: red;
+    margin: 7px 20px;
+    background-color: lightseagreen;
     height: 250px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 12px 0px rgb(113, 125, 126, 0.6);
     display: flex;
     justify-content: center;
     flex-direction: column;
+    transition : all 1s;
+}
+
+.box:hover{
+    transform: scale(1.05, 1.05);
 }
 
 .box > h3{
@@ -517,8 +573,9 @@ ul > li > a{
 /* MISSON AND UPCOMING */
 
 .container{
-    padding: 0px 50px;
-    background-color: khaki;
+    margin-top: 100px;
+    padding: 0px 100px;
+    background-color: whitesmoke;
 }
 
 .container h2{
@@ -535,17 +592,23 @@ ul > li > a{
     width: 900px;
     display:  flex;
     flex-wrap: wrap;
-    background-color: white;
 }
 
 .sub-mission {
     height: 70px;
-    width: 350px;
+    width: 330px;
     margin: 5px 15px;
     padding: 5px 25px;
     display: flex;
     align-items: center;
-    background-color: yellow;
+    background-color:  lightskyblue;
+    border-radius: 8px;
+    transition: all 1s;
+    box-shadow: 0px 5px 8px 0px rgba(77,94,232,0.5);
+}
+
+.sub-mission:hover{
+    transform: skew(20deg);
 }
 
 .sub-mission > h4{
@@ -557,7 +620,9 @@ ul > li > a{
 .upcoming-events > marquee{
     margin: 0 20px;
     width: 300px;
-    padding: 5px 0px
+    padding: 5px 15px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px rgb(166, 172, 175 , 0.5);
 }
 
 
@@ -566,7 +631,6 @@ ul > li > a{
 /* IMAGE GALLERY */
 
 .gallery {
-    background-color: lightblue;
     margin-top: 100px;
     max-width: 1400px;
 }
@@ -582,23 +646,57 @@ ul > li > a{
     padding: 50px 30px;
 }
 
-.image-gallery > div{
-    margin : 10px 10px;
-    padding: 5px;
-    width: 415px;
-    height: 250px;
-    background-color: red;
+.image-gallery > div {
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
 }
 
-.image-gallery > div >  img{
-    width: 100%;
-    height: inherit;
+.image-gallery > div:nth-child(1) > div{
+    max-width: 400px;
+    max-height: 300px;
+    margin: 5px 15px;
+    padding: 5px;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 2px 2px 15px grey;
+}
+
+.image-gallery > div:nth-child(1) > div > img:hover{
+    transform: scale(1.1, 1.1);
 }
 
 .image-gallery > .big{
-    flex : 25%;
-    height: 350px;
+    width: 100%;
+    z-index: 0;
 }
+
+.image-gallery > .big > div{
+    position: relative;
+    border-radius: 5px;
+    padding: 10px;
+    width: 600px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 2px 2px 16px grey;
+    margin: 15px 15px;
+}
+
+.image-gallery > .big > div > img:hover{
+    transform: scale(1.2, 1.2)
+}
+
+.image-gallery > div > div >img{
+    width: 100%;    
+    border-radius: 5px;
+    transition: all 2s;
+}
+
+
+
 
 
 
@@ -609,8 +707,10 @@ ul > li > a{
 /* FOOTER */
 
 footer{
+    font-size: 14px;
     margin-top: 150px;
-    background-color: mediumslateblue;
+    color : black;
+    background-color: #808B96 ;
     padding: 100px 200px;
 }
 
@@ -627,12 +727,10 @@ footer{
 }
 
 .useful-links > div{
-    background-color: red;
     display: flex;
 }
 
 .useful-links > div > p:nth-child(2){
-    background-color: yellow;
     margin-left: 50px;
 }
 
@@ -649,9 +747,15 @@ footer{
     border-radius: 50%;   
 }
 
+.fa-phone, .fa-globe, .fa-envelope-o{
+    font-size: 16px;
+    color : lawngreen;
+}
+
 
 .footer-part2{
     text-align: center;
     padding: 20px;
-    background-color: greenyellow;
+    background-color: #08AEEA;
+    background-image: linear-gradient(90deg, #08AEEA 0%, #2AF598 100%);
 }
