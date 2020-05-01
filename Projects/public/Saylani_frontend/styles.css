@@ -137,6 +137,25 @@ button:focus{
     }
 }
 
+@media screen and (max-width: 600px){
+    .header{
+        padding: 0px 20px ;
+    }
+    .social-media-icons > .fa{
+        font-size: 16px;
+        width: 18px;
+        height: 18px;
+    }
+    .donation-buttons{
+        display: flex;
+        flex-direction: column;
+    }
+    .donation-buttons > button{
+        font-size: 20px;
+        width: 160px;
+    }
+}
+
 
 
  /* LOGO AND NAVBAR STYLING */
@@ -328,7 +347,7 @@ nav{
 
 .dropdown-menu > ul{
     padding: 0px 15px;
-    font-size: 16px;
+    font-size: 12px;
 }
 
 .dropdown-menu > ul > li{
@@ -338,6 +357,35 @@ nav{
 ul > li > a{
     color: whitesmoke;
 }
+
+@media screen and (max-width: 1100px) {
+    .about + .dropdown-menu{
+        left: -20px;
+    }
+    .donation + .dropdown-menu{
+        left: 380px;
+    }
+    .services + .dropdown-menu{
+        left: 80px;
+    }
+    .projects + .dropdown-menu{
+        left: 180px;
+    }
+    .dropdown-menu > ul{
+        margin: 0px;
+    }
+    .dropdown-menu > ul > a{
+        display: none;
+    }
+    .dropdown-menu > a{
+        display: none;
+    }
+}
+
+
+
+
+
 
 
 
