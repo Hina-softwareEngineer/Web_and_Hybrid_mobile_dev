@@ -452,8 +452,9 @@ ul > li > a{
     word-spacing: 12px;
     font-size : 3em;
     position: absolute;
-    top:20%;
+    animation: slideup 1s ease-in-out 0s 1 forwards;
     left: 200px;
+    opacity: 0;
     max-width: 650px;
     color : #ECF0F1 ;
 }
@@ -510,7 +511,7 @@ ul > li > a{
 @media screen and (max-width: 930px){
     .main-image > h1{
         font-size: 2em;
-        top:35%;
+        animation: slideup930 1s linear 0s 1 forwards;
         left: 130px;
         right: 100px;
     }
@@ -522,8 +523,8 @@ ul > li > a{
     }
     .main-image > h1{
         font-size: 1.5em;
-        top: 20%;
         left: 70px;
+        animation: slideup 1s linear 0s 1 forwards;
         right: 50px;
     }
     .main-image > .leftarrow{
@@ -540,7 +541,27 @@ ul > li > a{
     }
 }
 
+@keyframes slideup {
+    0%{
+        top: 30%;
+        opacity: 0;
+    }
+    100%{
+        top:20%;
+        opacity: 1;
+    }
+}
 
+@keyframes slideup930 {
+    0%{
+        top: 50%;
+        opacity: 0;
+    }
+    100%{
+        top:35%;
+        opacity: 1;
+    }
+}
 
 
 
@@ -929,6 +950,12 @@ background: linear-gradient(180deg, rgba(77,94,232,1) 0%, rgba(77,225,93,1) 100%
         padding: 5px 10px;
         min-width: 280px;
     }
+    .container .mission >  h2:after{
+        width: 200px;
+    }
+    .upcoming-events >  h2:after{
+        width: 150px;
+    }
     
 }
 
@@ -1099,6 +1126,10 @@ background: linear-gradient(180deg, rgba(77,94,232,1) 0%, rgba(77,225,93,1) 100%
         max-width: 300px;
         max-height: 200px;
         padding: 0px;
+    }
+    .gallery > h2:after{
+        left: 20%;
+        width: 150px;
     }
 }
 
