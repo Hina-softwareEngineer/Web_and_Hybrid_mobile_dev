@@ -1,8 +1,43 @@
 
+var a= 25;
+console.log(a);
+
+
+var x = 5;
+var y = x++ + ++x + x + --x + x-- - x
+// 5 + 7 + 7 + 6 + 6 - 5
+console.log(y)
+
+
+var a = +prompt("Enter your age", "Your age is ");
+var b = a + 10;
+console.log("The output is " ,a, "  ",b)
+
+var age = 18
+if (age < 18){
+    alert("Your age is less");
+}
+else if (age > 18) {
+    alert("You are no more with less age.");
+}
+else {
+    alert("Your age is good!!!..")
+}
+
+
+var age = +prompt("Enter your age...")
+var gender = prompt("Enter your gender")
+if (age > 18 && gender == "male"){
+    alert('You are allowed')
+}
+else { alert("You are not allowed"); }
 
 
 
 
+var a = "5";
+if (a === 5 ){ alert("True")}
+else {alert("False")}
 
 
 
