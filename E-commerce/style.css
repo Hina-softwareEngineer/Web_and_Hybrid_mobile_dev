@@ -5,3 +5,13 @@
 .nav-link{
     color: #fff !important;
 }
+
+.carousel-inner{
+    height: 500px !important;
+    width: 100%;
+}
+
+.carousel-item{
+    width: 100%;
+    height: 100%;
+}
