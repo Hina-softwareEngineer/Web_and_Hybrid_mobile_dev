@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 </head>
 
 <body>
@@ -84,9 +86,10 @@
     </div>
 
     <div class="d-flex flex-row text-center m-5">
-        <div class="p-4 m-2 col bg-info border rounded">Free Shipping</div>
-        <div class="p-4 m-2 col bg-info border rounded">24/7 Support</div>
-        <div class="p-4 m-2 col bg-info ">Free Delivery</div>
+        <div class="p-4 m-2 col icon border rounded"><i class="fas fa-shipping-fast"></i>&nbsp;&nbsp;&nbsp;Free
+            Shipping</div>
+        <div class="p-4 m-2 col icon border rounded"><i class="fas fa-cloud"></i>&nbsp;&nbsp;&nbsp;24/7 Support</div>
+        <div class="p-4 m-2 col icon border rounded"><i class="fas fa-truck"></i>&nbsp;&nbsp;&nbsp;Free Delivery</div>
     </div>
 
     <h1 style="text-align: center;">Features</h1>
@@ -138,26 +141,33 @@
     <h1 style="text-align: center;">Products</h1>
 
     <div class="d-flex flex-row text-center m-5 card-deck">
+
         <div class="col p-4 m-2 card bg-primary">
+            <img class="card-img-top" src="./abc.jpg" alt="Card image cap">
             <div class="card-body text-center">
-                <p class="card-text">Some text inside the first card</p>
-                <p class="card-text">Some text inside the first card</p>
-                <p class="card-text">Some text inside the first card</p>
                 <p class="card-text">Some text inside the first card</p>
             </div>
         </div>
-        <div class="col p-4 m-2 card bg-warning">
+        <div class="col p-4 m-2 card bg-primary">
+            <img class="card-img-top" src="./abc.jpg" alt="Card image cap">
             <div class="card-body text-center">
                 <p class="card-text">Some text inside the second card</p>
             </div>
         </div>
-        <div class="col p-4 m-2 card bg-success">
+        <div class="col p-4 m-2 card bg-primary">
+            <img class="card-img-top" src="./abc.jpg" alt="Card image cap">
             <div class="card-body text-center">
                 <p class="card-text">Some text inside the third card</p>
             </div>
         </div>
 
     </div>
+
+    <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+        <div class="container text-center">
+            <small>Copyright &copy; Hina Khadim 2020</small>
+        </div>
+    </footer>
 
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
