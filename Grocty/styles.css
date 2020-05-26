@@ -1,0 +1,7 @@
+.navbar-collapse{
+    flex-grow: unset;
+}
+
+.navbar-expand-lg{
+    justify-content: center;
+}
