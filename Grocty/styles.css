@@ -5,3 +5,42 @@
 .navbar-expand-lg{
     justify-content: center;
 }
+
+.carousel-item{
+    max-height: 600px !important;
+}
+
+.carousel-caption{
+    top:25%;
+    left : 20%;
+    text-align: left;
+}
+
+.carousel-caption > h1{
+    max-width: 400px;
+    font-weight: 700;
+    font-size: 4em;
+    color:red;
+}
+
+.carousel-caption > p{ 
+    font-weight: 400;
+    font-size: 1.5em;
+    color:red;
+}
+
+@media screen and (max-width: 600px){
+
+    .carousel-caption > h1{
+        max-width: 400px;
+        font-weight: 700;
+        font-size: 1.3em;
+        color:red;
+    }
+    
+    .carousel-caption > p{ 
+        font-weight: 200;
+        font-size: 0.7em;
+        color:red;
+    }
+}
