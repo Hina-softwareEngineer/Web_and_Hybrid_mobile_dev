@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1.3px;
+}
+
+.header{
+    background-color: #9e00c5;
+    color : #fff;
+}
+
+.form-control:focus{
+    border: 1px solid #9e00c5;
+    box-shadow: none;
+}
+
+.btn:focus{
+    box-shadow: none;
+}
+
+.fab, .fas{
+    font-size: 1.3em;
+    vertical-align: top;
+}
+
+.info{
+    margin-top: 10px;
+}
+
+.header div a{
+    text-decoration: none;
+    color : white;
+    margin: 2px 10px;
+}
+
+.logoBar{
+    background-color: #d500f9;
+}
+
+.logoBar > a{
+    font-family: 'Great Vibes', cursive;
+    font-weight: 500;
+    font-size: 40px;
+    color : white;
+}
+
+.search-form > input{
+    width: 350px !important;
+    outline : none;
+}
+
+.search-form > .btn{
+    color : white;
+    border : 1px solid white;
+    background-color: transparent;
+}
+
+.search-form > .btn:hover{
+    background-color: white;
+    border: 1px solid #9e00c5;
+    color : #9e00c5;
+}
+
+.icons-cart{
+    color: white;
+}
+
+.icons-cart > .fas{
+    margin: 0px 5px;
+    font-size: 1.5em;
+}
+
+.icons-cart > .fa-shopping-cart{
+    position: relative;
+}
+
+.badge{
+    background-color: rgb(133, 11, 11);
+    border-radius: 50%;
+    font-size: 12px;
+    position: absolute;
+    top:-10px;
+    left : 20px;
+}
+
+.nav-link{
+    color : #9e00c5;
+    font-weight: bolder;
+    margin: 5px;
+}
+
+.nav-link:hover{
+    color:white;
+    background-color: #9e00c5;
+    border-radius: 5px;
+}
+
+.dropdown-item{
+    color: #d500f9;
+    font-weight: bolder;
+}
+
+.dropdown-item:hover{
+    color: white;
+    background-color: #d500f9;
+}
+
+.fa-heart, .fa-user, .fa-shopping-cart{
+    transition: all 0.3s linear 0s;
+    cursor: pointer;
+}
+
+.fa-heart:hover, .fa-user:hover, .fa-shopping-cart:hover{
+    transform: scale(1.2, 1.2);
+}
+
+.fa-heart:hover{
+    color:#F44336;
+}
+.fa-user:hover{
+    color:#42A5F5;
+}
+
+.fa-shopping-cart:hover{
+    color:#4DD0E1;
+}
