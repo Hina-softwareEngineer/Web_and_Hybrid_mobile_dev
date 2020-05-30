@@ -26,6 +26,10 @@ body{
     vertical-align: top;
 }
 
+.fab:hover{
+    color: lightskyblue;
+}
+
 .info{
     margin-top: 10px;
 }
@@ -86,17 +90,36 @@ body{
     left : 20px;
 }
 
-.nav-link{
+.navbar-toggler{
+    background-color: #9e00c5;
+}
+
+.navbar-collapse{
+    flex-grow: unset;
+}
+
+.navbar-expand-lg{
+    justify-content: center;
+    background-color: whitesmoke;
+}
+
+.navbar-toggle-icon > i{
+    color: white;    
+}
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-nav {
     color : #9e00c5;
     font-weight: bolder;
     margin: 5px;
 }
 
-.nav-link:hover{
+.navbar-light .navbar-nav .nav-link:hover{
     color:white;
     background-color: #9e00c5;
     border-radius: 5px;
 }
+
 
 .dropdown-item{
     color: #d500f9;
