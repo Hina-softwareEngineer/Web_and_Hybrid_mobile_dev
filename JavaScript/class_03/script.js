@@ -63,3 +63,31 @@ if (check == letter) {
 else {
     console.log('not palindrome')
 }
+
+//--------
+
+let value1 = +prompt("Enter first Value");
+let value2 = +prompt("Enter second Value");
+var operator = prompt("Enter operator");
+
+console.log(value1 + operator + value2);
+
+if (operator === '+') {
+    document.write("The sum is : ", value1 + value2);
+}
+
+else if (operator === '-') {
+    document.write("The sum is : ", value1 - value2);
+}
+
+else if (operator === '*') {
+    document.write("The sum is : ", value1 * value2);
+}
+
+else if (operator === '/') {
+    document.write("The sum is : ", value1 / value2);
+}
+
+else {
+    document.write("Syntax Error");
+}
