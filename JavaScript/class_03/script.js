@@ -66,28 +66,44 @@ else {
 
 //--------
 
-let value1 = +prompt("Enter first Value");
-let value2 = +prompt("Enter second Value");
-var operator = prompt("Enter operator");
+// let value1 = +prompt("Enter first Value");
+// let value2 = +prompt("Enter second Value");
+// var operator = prompt("Enter operator");
 
-console.log(value1 + operator + value2);
+// console.log(value1 + operator + value2);
 
-if (operator === '+') {
-    document.write("The sum is : ", value1 + value2);
+// if (operator === '+') {
+//     document.write("The sum is : ", value1 + value2);
+// }
+
+// else if (operator === '-') {
+//     document.write("The sum is : ", value1 - value2);
+// }
+
+// else if (operator === '*') {
+//     document.write("The sum is : ", value1 * value2);
+// }
+
+// else if (operator === '/') {
+//     document.write("The sum is : ", value1 / value2);
+// }
+
+// else {
+//     document.write("Syntax Error");
+// }
+
+var equ = prompt('Enter equations');
+var num = equ.length;
+console.log(equ.length)
+
+for (var i = 0; i < num; i++) {
+
+    if (equ.slice(i, i + 1) === '+' ||
+        equ.slice(i, i + 1) === '-' ||
+        equ.slice(i, i + 1) === '*' ||
+        equ.slice(i, i + 1) === '/') {
+        console.log("Sign has found");
+    }
+    console.log(equ.slice(i, i + 1));
 }
-
-else if (operator === '-') {
-    document.write("The sum is : ", value1 - value2);
-}
-
-else if (operator === '*') {
-    document.write("The sum is : ", value1 * value2);
-}
-
-else if (operator === '/') {
-    document.write("The sum is : ", value1 / value2);
-}
-
-else {
-    document.write("Syntax Error");
-}
+console.log('hello')
