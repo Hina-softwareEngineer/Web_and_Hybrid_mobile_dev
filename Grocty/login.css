@@ -1,0 +1,39 @@
+
+
+
+.parallax {
+    
+    position: relative;
+    /* The image used */
+    background-image: url("./raphel.jpg");
+  
+    /* Set a specific height */
+    height: 500px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax .overlay{
+    background-color: #d500f9;
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    opacity: 0.3;
+}
+
+.parallax .offers{
+    position: absolute;
+    top:40%;
+    left : 40%;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.offers h1{
+    margin: 20px 0px;
+    font-weight: bolder;
+    font-size: 3.5em;
+}
