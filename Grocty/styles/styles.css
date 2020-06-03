@@ -1,7 +1,45 @@
 
+@media screen and (max-width: 600px){
+    .carousel-control-prev-icon, .carousel-control-next-icon{
+        position: absolute;
+        top:45%;
+        bottom: unset;
+    }
+    
+    .carousel-caption > h1, .carousel-caption > p{
+        text-shadow: 2px 2px 3px #ffffff !important;
+    }
+
+    .carousel-caption > button{
+        padding: 5px !important;
+        font-size: 12px !important;
+    }
+
+    .carousel-inner{
+        height: 250px !important;
+    }
+
+    .headings{
+        margin-top: -30px;
+        font-size: 1.5rem;
+    }
+
+    .card-img-top{
+        height: 200px !important;
+    }
+
+    .card-title{
+        font-size: 1rem !important;
+    }
+
+    .card-text{
+        font-size: 0.8rem !important;
+    }
+
+}
 
 .carousel-inner{
-    height: 600px !important;
+    height: 600px;
 }
 
 .carousel-item > img{
@@ -49,15 +87,57 @@
 @media screen and (max-width: 600px){
 
     .carousel-caption > h1{
-        max-width: 400px;
+        max-width: 250px;
         font-weight: 700;
-        font-size: 1.3em;
+        font-size: 1.7em;
     }
     
     .carousel-caption > p{ 
         font-weight: 200;
-        font-size: 0.7em;
+        font-size: 0.9em;
     }
+
+    .card-footer > h6{
+        font-size: 0.8rem;
+    }
+
+    .ban{
+        flex-direction: column;
+    }
+
+    .banner{
+        height: 250px !important;
+    }
+
+    .banner > div > h1{
+        font-size: 1.8rem;
+        text-shadow: 2px 2px 3px red !important;
+    }
+    
+    .banner > div > p{
+        font-size: 14px;
+        
+    }
+
+    .parallax{
+        margin: 0 !important;
+        margin-bottom: 5px !important;
+    }
+    
+    
+
+    .offers h1{
+        margin: 20px 0px;
+        font-weight: bolder;
+        font-size: 2.5em !important;
+    }
+    
+    .offers button{
+        margin: 15px 0px;
+        padding: 5px 15px;
+        font-size: 16px !important;
+    }
+    
 }
 
 .card-deck{

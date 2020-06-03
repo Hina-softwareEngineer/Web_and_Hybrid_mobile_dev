@@ -1,6 +1,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
 
+@media screen and (max-width: 600px){
+    .authentic{
+        font-size: 1.2rem;
+    }
+
+    .signup-form{
+        flex-direction: column;
+    }
+
+    .signup-form > div{
+        font-size: 20px !important;   
+    }
+    
+    .signup-form > form > .input-group > div > .btn{
+        margin: 5px;
+        border-radius: 2px;
+        font-size: 14px !important;
+    }
+
+    .payments > h1{
+        font-size: 1.3rem;
+    }
+
+    footer{
+        flex-direction: column;
+    }
+
+    footer .cols:first-child{
+        margin: 25px;
+        border-bottom: 1px solid gray;
+    }
+
+    footer .cols:not(:first-child){
+        padding: 30px;
+    }
+
+    footer .cols:first-child{
+        margin-top: 0px !important;
+        padding-bottom: 30px;
+    }
+
+    .payments > .fab{
+        font-size: 2em !important;
+        margin: 5px !important;
+        
+    }
+    
+}
+
 .authentic{
     text-align: center;
     color: #ffffff;
@@ -39,20 +88,21 @@
     color: white;
 }
 
-.features .col {
+.features .col-xl-auto {
+    padding: 15px;
+    text-align: center;
+    flex: 1 0 auto;
+}
+
+.features .col-xl-auto:not(:last-child){
     text-align: center;
 }
 
-.features .col:not(:last-child){
-    text-align: center;
-    border-right: 1px solid whitesmoke;
-}
-
-.col > .fas{
+.col-xl-auto > .fas{
     font-size: 2.5em;
 }
 
-.col > h3{
+.col-xl-auto > h3{
     margin-top: 20px;
     font-weight: 600;
 }
@@ -62,7 +112,6 @@
     margin: 30px;
     padding-bottom: 10px;
     border-bottom: 1px solid grey;
-    
 }
 
 .payments > .fab{
@@ -102,6 +151,7 @@
 
 footer {
     margin-bottom: 30px;
+    justify-content: space-around;
 }
 
 footer > .logo-name > h1{
@@ -112,25 +162,25 @@ footer > .logo-name > h1{
     font-size: 4em;
 
 }
-footer .col:first-child{
+footer .cols:first-child{
     text-align: center;
 }
 
-footer .col{
+footer .cols{
     text-align: left;
 }
 
-footer .col h3{
+footer .cols h3{
     font-weight: 400;
 }
 
-footer .col p{
+footer .cols p{
     font-size: 14px;
     margin: 5px 0px;
     color: #777777;
 }
 
-footer .col p a{
+footer .cols p a{
     text-decoration: none;
     cursor: pointer;
     color: #757575;
