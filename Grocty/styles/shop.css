@@ -148,3 +148,24 @@ h6{
     font-weight: bolder;
     border-radius: unset;
 }
+
+
+@media screen and (max-width: 600px){
+
+    .boxes > .col-sm-4{
+        padding: 10px 20px;
+    }
+
+    .boxes > .col-sm-8 > .top-heading{
+        flex-direction: column;
+    }
+
+    .card{
+        margin-top: 15px;
+    }
+
+    .card-img-top{
+        height: 200px;
+    }
+
+}
