@@ -111,3 +111,16 @@ a:hover{
     text-decoration: none;
     border-bottom: 1px solid #cb0efa;
 }
+
+
+@media screen and (max-width: 600px){
+    .parallax .offers{
+        top:40%;
+        left : 10%;
+    }
+    
+    .offers h1{
+        font-size: 3em;
+    }
+    
+}
