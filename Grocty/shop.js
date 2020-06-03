@@ -27,3 +27,5 @@ plus[1].addEventListener('click', function () {
     }
     display2 = !display2;
 });
+
+
