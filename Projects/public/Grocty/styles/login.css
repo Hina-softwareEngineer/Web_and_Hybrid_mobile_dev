@@ -1,0 +1,126 @@
+
+
+
+.parallax {
+    
+    position: relative;
+    /* The image used */
+    background-image: url("../slider/banner.jpg");
+    
+  
+    /* Set a specific height */
+    height: 600px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax .overlay{
+    background-color: #d500f9;
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    opacity: 0.3;
+}
+
+.parallax .offers{
+    position: absolute;
+    top:40%;
+    left : 40%;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.offers h1{
+    margin: 20px 0px;
+    font-weight: bolder;
+    font-size: 3.5em;
+}
+
+
+.login > h3{
+    margin-top: 100px;
+    margin-bottom: 5px;
+    font-weight: bolder;
+    text-align: center;
+    color: #9e00c5;
+    text-transform: uppercase;
+}
+
+
+label, input{
+    font-family: 'Lato', sans-serif;
+}
+
+.form-login{
+    max-width: 700px;
+    margin: 0px auto;
+    margin-bottom: 100px;
+}
+
+.form-login > .form-group > .form-control{
+    border: 1px solid #9e00c5;
+}
+
+.form-control:focus{
+    background-color: #f5dcfc;
+}
+
+.form-group > label:not(:last-child)::after{
+    content: "*";
+    color: red;
+    font-size: 20px;
+}
+
+input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+}
+
+.btn:hover{
+    background-color: #9e00c5;
+    color: white;
+}
+
+.btn{
+    color: #9e00c5;
+    border: 1px solid #9e00c5;
+    background-color: white;
+}
+
+.signup{
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.signup +p{
+   font-size: 0.8rem;   
+}
+
+a{
+    text-decoration: none;
+    color: #9e00c5;
+    font-weight: bolder;
+    padding-bottom: 1px;
+}
+
+a:hover{
+    color: #d500f9;
+    text-decoration: none;
+    border-bottom: 1px solid #cb0efa;
+}
+
+
+@media screen and (max-width: 600px){
+    .parallax .offers{
+        top:40%;
+        left : 10%;
+    }
+    
+    .offers h1{
+        font-size: 3em;
+    }
+    
+}

@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+
+@media screen and (max-width: 600px){
+    .authentic{
+        font-size: 1.2rem;
+    }
+
+    .signup-form{
+        flex-direction: column;
+    }
+
+    .signup-form > div{
+        font-size: 20px !important;   
+    }
+    
+    .signup-form > form > .input-group > div > .btn{
+        margin: 5px;
+        border-radius: 2px;
+        font-size: 14px !important;
+    }
+
+    .payments > h1{
+        font-size: 1.3rem;
+    }
+
+    footer{
+        flex-direction: column;
+    }
+
+    footer .cols:first-child{
+        margin: 25px;
+        border-bottom: 1px solid gray;
+    }
+
+    footer .cols:not(:first-child){
+        padding: 30px;
+    }
+
+    footer .cols:first-child{
+        margin-top: 0px !important;
+        padding-bottom: 30px;
+    }
+
+    .payments > .fab{
+        font-size: 2em !important;
+        margin: 5px !important;
+        
+    }
+    
+}
+
+.authentic{
+    text-align: center;
+    color: #ffffff;
+    background-color: #9e00c5;
+    margin:0;
+    padding: 10px;
+}
+
+.signup-form{
+    color: #9e00c5;
+    background-color: #e8eaf6;
+}
+
+.signup-form > div{
+    font-size: 36px;
+}
+
+
+.signup-form > form {
+    margin-top: 5px;
+}
+
+.signup-form > form > .input-group > input{
+    width: 400px !important;
+}
+
+.signup-form > form > .input-group > div > .btn{
+    background-color: #9e00c5;
+    font-weight: bolder;
+
+    color: white;
+}
+
+.features{
+    background-color:  #9e00c5;
+    color: white;
+}
+
+.features .col-xl-auto {
+    padding: 15px;
+    text-align: center;
+    flex: 1 0 auto;
+}
+
+.features .col-xl-auto:not(:last-child){
+    text-align: center;
+}
+
+.col-xl-auto > .fas{
+    font-size: 2.5em;
+}
+
+.col-xl-auto > h3{
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.payments{
+    text-align: center;
+    margin: 30px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid grey;
+}
+
+.payments > .fab{
+    font-size: 2.5em;
+    margin: 10px 10px;
+}
+
+.payments .fa-cc-visa{
+    color: blue;
+}
+
+.payments .fa-cc-mastercard{
+    background: linear-gradient(90deg, 
+    #D32F2F 2%, #FB8C00 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.payments .fa-cc-stripe{
+    background: linear-gradient(90deg, 
+    #0277BD 2%,#01579B 52% ,#29B6F6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.payments .fa-cc-paypal{
+    background: linear-gradient(90deg, 
+    #0277BD 2%, #29B6F6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.payments .fa-cc-amazon-pay{
+    color: #FFA726;
+}
+
+footer {
+    margin-bottom: 30px;
+    justify-content: space-around;
+}
+
+footer > .logo-name > h1{
+    cursor: pointer;
+    font-family: 'Great Vibes', cursive;
+    color: #d500f9;
+    font-weight: 500;
+    font-size: 4em;
+
+}
+footer .cols:first-child{
+    text-align: center;
+}
+
+footer .cols{
+    text-align: left;
+}
+
+footer .cols h3{
+    font-weight: 400;
+}
+
+footer .cols p{
+    font-size: 14px;
+    margin: 5px 0px;
+    color: #777777;
+}
+
+footer .cols p a{
+    text-decoration: none;
+    cursor: pointer;
+    color: #757575;
+}
+
+.copyright{
+    text-align: center;
+    background-color: #9e00c5;
+    color: white;
+    margin-bottom: 0px;
+    padding: 5px;
+    font-size: 12px;
+}
+
+.copyright p{
+    margin-top: 8px;
+}
