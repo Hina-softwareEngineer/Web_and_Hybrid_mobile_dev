@@ -1,3 +1,5 @@
+
+
 body{
     margin: 0;
 }
@@ -63,6 +65,7 @@ body{
 .logo{
     margin-left: 100px;
     cursor: pointer;
+    
 }
 
 nav{
@@ -79,11 +82,21 @@ nav > li{
 .card{
     border: 1px solid red;
     max-width: 400px;
+    border-radius: 25px;
+    box-shadow: 4px 4px 15px gray, -3px -3px 10px grey;
+    overflow: hidden;
 }
 
 .card-img{
     width: 400px;
     height: 250px;
+}
+
+.card-img::after{
+    content : "";
+    width: 400px;
+    height: 250px;
+    background-color: yellow;
 }
 
 .card-img > img{
