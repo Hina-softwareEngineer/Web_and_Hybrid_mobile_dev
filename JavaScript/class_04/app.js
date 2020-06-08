@@ -37,3 +37,5 @@ console.log(para1);
 
 var num = 1.4;
 console.log(Math.round(num));
+
+// Math.toFixed, Math.random(), Number(), .tostring(), parseInt
