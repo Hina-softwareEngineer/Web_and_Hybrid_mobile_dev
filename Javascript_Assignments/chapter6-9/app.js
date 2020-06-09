@@ -1,6 +1,6 @@
 
 
-
+// -----------------Task 1----------------------
 
 let x = +prompt("Enter number");
 document.write("Result :")
@@ -17,7 +17,7 @@ document.write("<br><br>The value of x-- is : ", x--);
 document.write("Now, The value of x is : ", x);
 
 
-
+// -----------------Task 2----------------------
 var a = 2, b = 1;
 var result = --a;
 document.write("<br>a is ", a);
@@ -33,10 +33,13 @@ document.write("<br>Result is ", result);
 
 
 
+// -----------------Task 3----------------------
 var input = prompt("Enter Your name: ");
 document.write(input, " ! Welcome to our site");
 
 
+
+// -----------------Task 4----------------------
 var number = +prompt("Enter number");
 if (!number) {
     number = 5;
@@ -47,6 +50,7 @@ for (var i = 1; i < 11; i++) {
 
 
 
+// -----------------Task 5----------------------
 var sub1 = prompt("Enter subject");
 var sub2 = prompt("Enter subject");
 var sub3 = prompt("Enter subject");
