@@ -73,9 +73,19 @@ for (i = 0; i < A.length; i++) {
 
 
 var password = prompt("Enter password");
-if (password.match(/^([A-Za-z]){1}+(a-zA-Z0-9){5}$/g)) {
-    console.log("matched");
+if (password.match(/^[A-Za-z][a-zA-Z0-9]{5}$/)) {
+    alert("Password can't begin with a number");
+    alert("Please enter a valid password");
 }
-else { console.log("not matched") }
 
 
+var university = "University of Karachi";
+document.write(university.split(""));
+
+
+var user_input1 = prompt("Enter your country name: ");
+document.write(document.write("<br>", user_input1[user_input1.length - 1]));
+
+
+var string2 = "The quick brown fox jumps over the lazy dog";
+document.write("There are ", string2.match(/the/gi).length, " of the world 'the'");
