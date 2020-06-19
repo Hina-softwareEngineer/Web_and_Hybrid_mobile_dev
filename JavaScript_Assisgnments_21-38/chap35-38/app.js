@@ -1,21 +1,24 @@
-
+//-------------------Task 1----------------
 
 function current_date() {
     document.write(new Date());
 }
 
+
+//-------------------Task 2----------------
 function fullName(input1, input2) {
     var fullName1 = input1 + input2;
     alert(`Welcome ${fullName1}`);
 }
 
-
+//-------------------Task 3----------------
 function add(num1, num2) {
     document.write("Sum is ", num2 + num2);
 }
 
 
-function(num1, num2, op) {
+//-------------------Task 4----------------
+function calculator(num1, num2, op) {
     if (op === '+') { document.write("<br>", num1, " ", op, " ", num2, " = ", num + num2) }
     if (op === '-') { document.write("<br>", num1, " ", op, " ", num2, " = ", num - num2) }
     if (op === '*') { document.write("<br>", num1, " ", op, " ", num2, " = ", num * num2) }
@@ -23,11 +26,12 @@ function(num1, num2, op) {
     if (op === '%') { document.write("<br>", num1, " ", op, " ", num2, " = ", num % num2) }
 }
 
-
+//-------------------Task 5----------------
 function square(n) {
     return n * n;
 }
 
+//-------------------Task 6----------------
 function factorial(n) {
     if (n <= 1) {
         return 1;
@@ -41,7 +45,7 @@ function factorial(n) {
 }
 
 
-
+//-------------------Task 7----------------
 function display(start, end) {
     for (var i = start; i < end + 1; i++) {
         document.write(" i :", i);
@@ -49,6 +53,7 @@ function display(start, end) {
 }
 
 
+//-------------------Task 8----------------
 function calculateHypotenuse(base, perpendicular) {
     let hyp = base * base + perpendicular * perpendicular;
     document.write(Math.sqrt(hyp));
@@ -60,11 +65,14 @@ function calculateHypotenuse(base, perpendicular) {
 
 
 
+//-------------------Task 9----------------
 function area(width = 56, height = 45) {
     return width * height;
 }
 
 
+
+//-------------------Task 10----------------
 function palindrome(string) {
     let rev = "";
     for (var i = string.length; i >= 0; i--) {
@@ -77,6 +85,8 @@ function palindrome(string) {
 }
 
 
+
+//-------------------Task 11----------------
 function uppercase(string) {
     let splitted_string = string.split(" ");
     for (var i = 0; i < splitted_string.length; i++) {
@@ -86,6 +96,7 @@ function uppercase(string) {
 
 
 
+//-------------------Task 12----------------
 function longest_string(string) {
     let splitted_string = string.split(" ");
     let max = 0;
@@ -101,7 +112,7 @@ function longest_string(string) {
 }
 
 
-
+//-------------------Task 13----------------
 function count_letter(string, letter) {
     let count = 0;
     for (i = 0; i < string.length; i++) {
@@ -113,7 +124,7 @@ function count_letter(string, letter) {
 }
 
 
-
+//-------------------Task 14----------------
 function calcCircumference(radius) {
     document.write("The circumference is : ", radius * 3.142, 2);
 }
