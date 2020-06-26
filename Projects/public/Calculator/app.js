@@ -14,6 +14,7 @@ function getValue(value) {
       result = "";
       break;
     default:
+      console.log(show);
       result = result + value;
       show = show + value;
       input.form.value = result;
@@ -25,7 +26,6 @@ function Result() {
   let finalResult = eval(show);
   input.form.value = finalResult;
   result = "";
-  console.log("show", show);
 }
 
 function Clear() {

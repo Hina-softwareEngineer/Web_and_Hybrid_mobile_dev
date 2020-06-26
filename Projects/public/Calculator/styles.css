@@ -1,0 +1,11 @@
+body {
+  margin: 0px;
+}
+
+.calculator {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+}
