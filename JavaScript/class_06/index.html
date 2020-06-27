@@ -34,6 +34,69 @@
       <button>/</button>
     </div>
 
+    <form method="POST">
+      <input type="number" name="sid" placeholder="Enter sid" />
+      <input type="text" name="name" placeholder="Enter name" />
+      <input type="text" name="email" placeholder="Enter email" />
+      <input type="text" name="age" placeholder="Enter age" />
+      <button value="submit">Submit</button>
+    </form>
+
+    <button id="btn">Helo click</button>
+    <button id="edit">edit</button>
+    <button id="btn">Helo click</button>
+    <button id="btn">Helo click</button>
+
     <script src=" ./app.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      $(document).ready(function () {
+        $("#btn").click(function () {
+          alert("The paragraph was clicked.");
+
+          var arr = {
+            sid: 2,
+            name: "jina",
+            email: "@gmailcom",
+            age: "18",
+          };
+          $.ajax({
+            url: "http://localhost:8000/add",
+            type: "POST",
+            data: JSON.stringify(arr),
+            // contentType: "application/json; charset=utf-8",
+            // dataType: "json",
+            // async: false,
+            success: function (msg) {
+              alert(msg);
+            },
+          });
+        });
+
+        $("#edit").click(function () {
+          alert("The paragraph was clicked.");
+
+          var arr = {
+            sid: 1,
+            name: "hina",
+            email: "hina123@gmailcom",
+            age: "16",
+          };
+          $.ajax({
+            url: "http://localhost:8000/update",
+            type: "PUT",
+            data: JSON.stringify(arr),
+            success: function (msg) {
+              alert(msg);
+            },
+          });
+        });
+      });
+    </script>
   </body>
 </html>

@@ -23,12 +23,20 @@ function getValue(value) {
 }
 
 function Result() {
+  console.log(show, result);
   let finalResult = eval(show);
   input.form.value = finalResult;
   result = "";
+  show = "";
 }
 
 function Clear() {
   result = "";
+  input.form.value = result;
+}
+
+function backspace() {
+  result = result.substr(0, result.length - 1);
+  show = show.substr(0, show.length - 1);
   input.form.value = result;
 }
