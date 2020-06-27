@@ -25,7 +25,12 @@ function getValue(value) {
 function Result() {
   console.log(show, result);
   let finalResult = eval(show);
-  input.form.value = finalResult;
+  if (finalResult === undefined || finalResult === NaN) {
+    input.form.value = "0";
+  } else {
+    console.log("final result : ", finalResult);
+    input.form.value = finalResult;
+  }
   result = "";
   show = "";
 }
@@ -40,3 +45,11 @@ function backspace() {
   show = show.substr(0, show.length - 1);
   input.form.value = result;
 }
+
+let buttons = document.querySelectorAll("button");
+
+buttons.forEach((button) => {
+  button.addEventListener("click", function playSound() {
+    document.getElementById("play").play();
+  });
+});
