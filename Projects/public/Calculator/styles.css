@@ -2,14 +2,20 @@
 
 body {
   margin: 0px;
+  background-color: #d9afd9;
+  background-image: linear-gradient(0deg, #d9afd9 0%, #97d9e1 100%);
 }
 
 .calculator {
   max-width: 350px;
-  margin: 150px auto;
+  margin: 115px auto;
   text-align: center;
   padding: 20px;
-  border: 2px solid blue;
+  border: 2px solid #ff3cac;
+  border-radius: 5px;
+  box-shadow: -2px -2px 4px #555, 2px 2px 5px 0px #555, 4px 4px 5px 0px #555,
+    6px 6px 5px 0px #555, 8px 8px 5px 0px #555, 10px 10px 5px 0px #555,
+    12px 12px 5px 0px #555, 14px 14px 5px 0px #555, 16px 16px 5px 0px #555;
   background-color: #21d4fd;
   background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);
 }
@@ -19,10 +25,15 @@ body {
 }
 
 .calculator > .input > input {
-  width: 99%;
+  width: 92%;
+  background-color: #86d6f3;
+  border: 1px solid rgb(82, 81, 81);
+  border-radius: 5px;
+  font-size: 40px;
+  padding: 0px 10px;
   height: 70px;
-  padding: 0;
   margin: 0;
+  box-shadow: 2px 2px 4px grey inset, -2px -2px 4px grey inset;
 }
 
 .buttons {
@@ -36,14 +47,20 @@ button {
   margin: 5px;
   font-size: 24px;
   font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  letter-spacing: 2px;
   height: 70px;
-  border: none;
+  border: 1px solid white;
+  color: #000000;
   border-radius: 5px;
-  background-color: #08aeea;
-  background-image: linear-gradient(0deg, #08aeea 0%, #2af598 100%);
+  background-color: #a9c9ff;
+  background-image: linear-gradient(135deg, #a9c9ff 0%, #ffbbec 100%);
 }
 
 .back {
   margin-top: 25px;
   width: 100%;
+}
+
+input:focus {
 }
