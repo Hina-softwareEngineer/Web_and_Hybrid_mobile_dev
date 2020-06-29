@@ -1,5 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
 body {
   margin: 0;
+  font-family: "Nunito", sans-serif;
+  letter-spacing: 1.3px;
+  color: #212121;
+}
+
+a {
+  text-decoration: none;
+  color: #212121;
+}
+
+h2 {
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: bolder;
+  color: #ec407a;
 }
 
 .fixed-icon {
@@ -26,10 +43,10 @@ body {
 }
 
 .parallax .overlay {
-  background-color: #000000;
+  background-color: #ec407a;
   width: -webkit-fill-available;
   height: -webkit-fill-available;
-  opacity: 0.3;
+  opacity: 0.2;
 }
 
 .parallax .offers {
@@ -47,14 +64,16 @@ body {
 }
 
 .headers {
-  position: absolute;
+  position: fixed;
   top: 0;
   display: flex;
+  font-weight: 700;
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  z-index: 100;
   color: white;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: #ff77a9;
 }
 
 .logo {
@@ -79,35 +98,75 @@ nav > li {
   align-content: flex-start;
 }
 .card {
-  border: 1px solid grey;
+  border: 1px solid #ec407a;
   max-width: 400px;
   border-radius: 25px;
   box-shadow: 3px 3px 20px rgb(82, 81, 81), -2px -2px 10px rgb(231, 230, 230);
   overflow: hidden;
   margin: 20px auto;
+  position: relative;
 }
 
 .card-img {
   width: 400px;
   height: 250px;
+  position: relative;
+  overflow: hidden;
 }
 
-.card-img::after {
-  content: "";
-  width: 400px;
-  height: 250px;
-  background-color: yellow;
+.card-img:hover > img {
+  transform: scale(1.1);
 }
 
 .card-img > img {
   width: inherit;
+  transition: all 0.8s ease-in-out 0s;
   height: inherit;
+}
+
+.card-img:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 12;
+  /* background-color: #ec407a; */
+  opacity: 0.1;
+  box-shadow: 0 0 150px 1px #ec407a inset;
+}
+
+.card-content > h1 {
+  height: 90px;
+  margin-bottom: 0;
 }
 
 .card .card-content {
   padding: 5px 15px;
 }
 
-.card-content > p > a {
+.card-content > a {
+  display: block;
+  max-width: 400px;
+  color: white;
+  font-weight: 700;
   text-decoration: none;
+  margin: 5px 0;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: #ff77a9;
+  border: 2px solid #ff77a9;
+  text-align: center;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.card-content > a:hover {
+  color: #ff77a9;
+  background-color: white;
+  border: 2px solid #ff77a9;
+}
+
+.card-content > a:last-child {
+  margin-bottom: 30px;
 }
