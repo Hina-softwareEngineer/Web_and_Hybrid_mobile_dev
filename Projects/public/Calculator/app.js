@@ -3,15 +3,26 @@ let result = "";
 let op = "";
 let show = "";
 
+let op_count = 0;
+
 function getValue(value) {
   switch (value) {
     case "+":
     case "-":
     case "*":
     case "/":
-      op = value;
-      show = result + op;
-      result = "";
+      if (op_count == 0) {
+        op = value;
+        show = result + op;
+        result = "";
+        op_count = op_count + 1;
+      } else {
+        result = "";
+        show = "";
+        input.form.value = "Syntax Error";
+        op_count = 0;
+      }
+
       break;
     default:
       console.log(show);

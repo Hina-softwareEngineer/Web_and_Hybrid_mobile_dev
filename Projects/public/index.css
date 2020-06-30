@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+
 body {
   margin: 0;
   font-family: "Nunito", sans-serif;
@@ -46,21 +48,32 @@ h2 {
   background-color: #ec407a;
   width: -webkit-fill-available;
   height: -webkit-fill-available;
-  opacity: 0.2;
+  opacity: 0.5;
 }
 
 .parallax .offers {
   position: absolute;
   top: 40%;
-  left: 35%;
+  left: 34%;
   color: #ffffff;
+  text-align: center;
   text-shadow: 2px 2px 4px #000000;
 }
 
 .offers h1 {
   margin: 20px 0px;
   font-weight: bolder;
-  font-size: 3.5em;
+  font-size: 4em;
+}
+
+.offers p {
+  max-width: 520px;
+  padding: 10px;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  text-align: center;
+  text-justify: auto;
+  text-shadow: 4px 4px 15px #000000;
 }
 
 .headers {
@@ -76,9 +89,13 @@ h2 {
   background-color: #ff77a9;
 }
 
-.logo {
+.logo > a {
+  text-decoration: none;
+  color: white;
   margin-left: 100px;
   cursor: pointer;
+  font-size: 2.5rem;
+  font-family: "Great Vibes", cursive;
 }
 
 nav {
