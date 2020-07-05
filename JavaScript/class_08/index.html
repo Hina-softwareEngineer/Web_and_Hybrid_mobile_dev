@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class 08</title>
+
+    <style>
+      body {
+        text-align: center;
+      }
+      h1 {
+        display: inline-block;
+        width: 100px;
+        margin: 20px;
+      }
+      button {
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Stop Watch</h1>
+    </div>
+    <div>
+      <h1 id="min">0</h1>
+      <h1 id="sec">0</h1>
+      <h1 id="msec">0</h1>
+    </div>
+
+    <div>
+      <button id="start" onclick="start()">Start</button>
+      <button onclick="stop()">Pause</button>
+      <button onclick="reset()">Reset</button>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
