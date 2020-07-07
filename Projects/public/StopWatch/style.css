@@ -1,0 +1,52 @@
+@font-face {
+  font-family: Digital;
+  src: url(./digital-7.ttf);
+}
+
+body {
+  text-align: center;
+  background-color: black;
+  color: #ea80fc;
+}
+
+.mainHeading {
+  font-family: Digital;
+  font-weight: 100;
+  margin: 100px auto;
+  font-size: 7em;
+  text-shadow: 5px 5px 20px #9e00c5, -5px -5px 20px #9e00c5;
+}
+
+.time {
+  display: flex;
+  justify-content: center;
+  width: 500px;
+  margin: 0 auto;
+  border: 2px solid #b64fc8;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px #b64fc8, -3px -3px 10px #b64fc8,
+    3px 3px 10px #b64fc8 inset, -3px -3px 10px #b64fc8 inset;
+}
+
+#min,
+#msec {
+  font-family: Digital;
+  width: 150px;
+  font-size: 6em;
+  text-shadow: 3px 3px 10px #b64fc8, -3px -3px 10px #b64fc8;
+  font-weight: 100;
+  margin-bottom: 0.9em;
+}
+
+#sec1 {
+  font-family: Digital;
+  font-size: 6em;
+  text-shadow: 3px 3px 10px #b64fc8, -3px -3px 10px #b64fc8;
+  font-weight: 100;
+}
+
+#sec {
+  margin: 0;
+  width: 100px;
+  display: inline-block;
+}
