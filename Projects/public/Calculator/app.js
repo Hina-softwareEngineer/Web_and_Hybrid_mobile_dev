@@ -3,38 +3,34 @@ let result = "";
 let op = "";
 let show = "";
 
-let op_count = 0;
-
 function getValue(value) {
   switch (value) {
     case "+":
     case "-":
     case "*":
     case "/":
-      if (op_count == 0) {
+      if (show.substr(show.length - 1, show.length) !== "+") {
         op = value;
-        show = result + op;
+        show = show + op;
+        console.log("show : ", show, result);
         result = "";
-        op_count = op_count + 1;
       } else {
         result = "";
         show = "";
         input.form.value = "Syntax Error";
-        op_count = 0;
       }
 
       break;
     default:
-      console.log(show);
       result = result + value;
       show = show + value;
+      console.log(show, result);
       input.form.value = result;
       break;
   }
 }
 
 function Result() {
-  console.log(show, result);
   let finalResult = eval(show);
   if (finalResult === undefined || finalResult === NaN) {
     input.form.value = "0";
@@ -42,6 +38,7 @@ function Result() {
     console.log("final result : ", finalResult);
     input.form.value = finalResult;
   }
+  console.log(show, result);
   result = "";
   show = "";
 }
