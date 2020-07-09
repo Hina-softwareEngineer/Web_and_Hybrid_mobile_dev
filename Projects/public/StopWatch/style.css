@@ -77,3 +77,38 @@ body {
   color: rgba(182, 79, 200, 0.8);
   cursor: not-allowed !important;
 }
+
+@media screen and (max-width: 600px) {
+  .mainHeading {
+    margin-top: 50px;
+    font-size: 4em;
+    line-height: 1.1;
+  }
+
+  .time {
+    width: 300px;
+  }
+
+  #min,
+  #msec {
+    font-size: 3em;
+    width: 70px;
+  }
+
+  #sec1 {
+    font-size: 3em;
+    width: 120px;
+  }
+
+  #sec {
+    width: 70px;
+  }
+}
+
+img {
+  margin-top: 20px;
+  width: 225px;
+  height: 300px;
+  transform: skew(-20deg, 20deg);
+  opacity: 0.6;
+}

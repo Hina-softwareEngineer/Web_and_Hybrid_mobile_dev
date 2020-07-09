@@ -59,6 +59,7 @@ function timer() {
     } else {
       minHeading.innerHTML = min;
     }
+    document.getElementById("play").play();
   }
 }
 
