@@ -7,6 +7,33 @@ var msecHeading = document.getElementById("msec");
 
 var interval;
 
+let controls = document.querySelector(".control");
+let resetBtn = document.querySelector("#reset");
+
+controls.addEventListener("click", function () {
+  count = 0;
+  if (this.innerText === "timer") {
+    this.innerText = "pause_circle_outline";
+    resetBtn.classList.remove("disabled");
+    start();
+  } else {
+    this.innerText = "timer";
+    resetBtn.classList.remove("disabled");
+    stop();
+  }
+});
+
+var count = 1;
+
+resetBtn.addEventListener("click", function () {
+  if (count == 0) {
+    reset();
+    resetBtn.className += " disabled";
+    controls.innerText = "timer";
+    count = 1;
+  }
+});
+
 function timer() {
   msec++;
   if (msec <= 9) {
@@ -37,12 +64,10 @@ function timer() {
 
 function start() {
   interval = setInterval(timer, 10);
-  document.getElementById("start").disabled = true;
 }
 
 function stop() {
   clearInterval(interval);
-  document.getElementById("start").disabled = false;
 }
 
 function reset() {
@@ -53,5 +78,4 @@ function reset() {
   minHeading.innerHTML = "0" + min;
   secHeading.innerHTML = "0" + sec;
   msecHeading.innerHTML = "0" + msec;
-  document.getElementById("start").disabled = false;
 }

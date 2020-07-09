@@ -1,7 +1,8 @@
 let input = document.getElementsByTagName("input");
-let result = "";
+let result = "0";
 let op = "";
 let show = "";
+input.form.value = result;
 
 function getValue(value) {
   switch (value) {
@@ -9,15 +10,21 @@ function getValue(value) {
     case "-":
     case "*":
     case "/":
-      if (show.substr(show.length - 1, show.length) !== "+") {
+      console.log("show m sub", show.substr(show.length - 1, show.length));
+      if (
+        show.substr(show.length - 1, show.length) == "+" ||
+        show.substr(show.length - 1, show.length) == "-" ||
+        show.substr(show.length - 1, show.length) == "*" ||
+        show.substr(show.length - 1, show.length) == "/"
+      ) {
+        result = "";
+        show = "";
+        input.form.value = "Syntax Error";
+      } else {
         op = value;
         show = show + op;
         console.log("show : ", show, result);
         result = "";
-      } else {
-        result = "";
-        show = "";
-        input.form.value = "Syntax Error";
       }
 
       break;
@@ -41,10 +48,12 @@ function Result() {
   console.log(show, result);
   result = "";
   show = "";
+  console.log("result funct", result, show);
 }
 
 function Clear() {
-  result = "";
+  result = "0";
+  show = "";
   input.form.value = result;
 }
 
