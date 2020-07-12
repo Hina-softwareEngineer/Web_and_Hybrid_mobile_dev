@@ -111,7 +111,7 @@ h2 {
 .parallax {
   position: relative;
   /* The image used */
-  background-image: url("./Images/abc3.jpg");
+  /* background-image: url("./Images/abc3.jpg"); */
 
   /* Set a specific height */
   height: 100vh;

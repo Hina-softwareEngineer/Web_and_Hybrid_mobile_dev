@@ -9,6 +9,7 @@ This course includes my learning of
 - Bootstrap,
 - Git & Github,
 - JavaScript
+- JavaScript DOM
 
 I have made the following projects up till now.
 
@@ -17,3 +18,4 @@ I have made the following projects up till now.
 3. Saylani Landing Page (Mobile Responsive)
 4. Grocty - Ecommerce Webstie (Mobile Responsive)
 5. JavaScript Calculator
+6. StopWatch
