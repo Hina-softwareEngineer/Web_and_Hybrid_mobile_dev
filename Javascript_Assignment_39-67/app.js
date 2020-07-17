@@ -106,3 +106,60 @@ function currency(rupees) {
     " ten notes"
   );
 }
+
+// 43-48
+
+let images = document.querySelectorAll("img");
+
+for (var i = 0; i < images.length; i++) {
+  images[i].addEventListener("click", function () {
+    alert("Thanks for purchasing a phone from us.");
+  });
+}
+
+var name = "hina";
+var classes = 8;
+for (var i = 0; i < 4; i++) {
+  let row = document.createElement("tr");
+  row.id = "row" + i;
+  let text = `<td>${i}</td><td>${name + i}</td><td>${
+    classes + i
+  }</td><td><button id="buttons">Delete</button></td>`;
+  row.innerHTML = text;
+  document.querySelector("table").appendChild(row);
+}
+
+let button = document.querySelectorAll("#buttons");
+
+for (var i = 0; i < 4; i++) {
+  button[i].addEventListener("click", function (e) {
+    var r = document.querySelector(
+      `#${e.target.parentElement.parentElement.id}`
+    );
+    r.remove();
+  });
+}
+
+let chan = document.getElementById("images");
+chan.addEventListener("mouseenter", function () {
+  chan.src =
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ3b4Gl9TVUv6ehAIYGinLXvR1lwMfY86w2dA&usqp=CAU";
+});
+
+chan.addEventListener("mouseleave", function () {
+  chan.src =
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQqJboX8qeAbhLH4UEfmpKia6CiMW85YbWRQg&usqp=CAU";
+});
+
+var count = 0;
+let h2 = document.querySelector("h2");
+
+document.querySelector(".inc").addEventListener("click", function () {
+  count += 1;
+  h2.innerText = count;
+});
+
+document.querySelector(".dec").addEventListener("click", function () {
+  count -= 1;
+  h2.innerText = count;
+});
