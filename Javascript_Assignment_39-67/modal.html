@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      div {
+        width: 100%;
+        padding: 40px;
+        height: 500px;
+        display: inline;
+      }
+      div > img {
+        width: 350px;
+        height: 350px;
+        cursor: pointer;
+      }
+
+      .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0, 0, 0); /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+      }
+
+      /* Modal Content/Box */
+      .modal-content {
+        margin: 20% auto; /* 15% from the top and centered */
+
+        width: 100%; /* Could be more or less, depending on screen size */
+      }
+
+      .modal-content > img {
+        margin: 0 auto;
+        width: 1350px;
+        height: 650px;
+      }
+      .modal-content > h1 {
+        text-align: center;
+        padding-left: -20px;
+        color: white;
+        text-shadow: 2px 2px 4px #000000;
+      }
+
+      /* The Close Button */
+      .close {
+        position: absolute;
+        top: 0;
+        left: 44%;
+        color: rgb(0, 255, 242);
+        text-align: center;
+        font-size: 5em;
+        font-weight: bold;
+        text-decoration: none;
+      }
+
+      .close:hover,
+      .close:focus {
+        color: black;
+
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <img id="1" class="landImages" src="./images/others/1.jpg" alt="land" />
+      <img id="2" class="landImages" src="./images/others/3.jpg" alt="water" />
+      <img
+        id="3"
+        class="landImages"
+        src="./images/others/5.jpg"
+        alt="mountains"
+      />
+      <img id="4" class="landImages" src="./images/others/6.jpg" alt="clouds" />
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <span class="close">&times;</span>
+      <div class="modal-content">
+        <img id="land" src="./images/others/1.jpg" alt="modalImage" />
+        <h1>Welcome to the words of Dreams!!</h1>
+      </div>
+    </div>
+    <script src="./modal.js"></script>
+  </body>
+</html>
