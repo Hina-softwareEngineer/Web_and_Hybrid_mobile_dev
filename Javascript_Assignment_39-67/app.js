@@ -1,4 +1,6 @@
-/*function power(a, b) {
+// Assignment 39-47------------------------------------------------------
+
+function power(a, b) {
   return Math.pow(a, b);
 }
 
@@ -107,7 +109,7 @@ function currency(rupees) {
   );
 }
 
-// 43-48
+//  Assignment 43-48-----------------------------------------------
 
 let images = document.querySelectorAll("img");
 
@@ -163,9 +165,7 @@ document.querySelector(".dec").addEventListener("click", function () {
   count -= 1;
   h2.innerText = count;
 });
-*/
 
-/*
 let array = [];
 let obj = {};
 obj.firstName = "John";
@@ -188,7 +188,7 @@ if (true) {
   console.log("2nd arrat");
 }
 
-// 49-52
+// Assignemnt 49-52--------------------------------------------------------
 
 let submit = document.querySelector("form");
 let inputs = document.querySelectorAll("input");
@@ -262,9 +262,8 @@ for (var i = 0; i < 4; i++) {
     hide.style.display = "block";
   });
 }
-*/
 
-// 58-67
+// Assignment 58-67---------------------------------------------------------
 
 let main_content = document.getElementById("main-content");
 
