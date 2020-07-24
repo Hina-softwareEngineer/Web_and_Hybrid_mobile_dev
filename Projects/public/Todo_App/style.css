@@ -1,0 +1,16 @@
+.edity {
+  display: none;
+}
+
+ul li.editMode label {
+  display: none;
+}
+
+ul li.editMode input {
+  display: block;
+}
+
+label,
+.edity {
+  max-width: 200px;
+}

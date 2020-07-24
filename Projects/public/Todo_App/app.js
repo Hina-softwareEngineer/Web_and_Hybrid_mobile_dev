@@ -3,7 +3,12 @@ var ul = document.getElementById("list");
 
 function addNewTodo() {
   var li = document.createElement("li");
-  li.textContent = todo_item.value;
+
+  let label = document.createElement("label");
+  label.textContent = todo_item.value;
+
+  let input = document.createElement("input");
+  input.classList = "edity";
 
   let del = document.createElement("button");
   var delText =
@@ -16,6 +21,9 @@ function addNewTodo() {
 
   del.setAttribute("onclick", "deleteTodo(this)");
   edit.setAttribute("onclick", "editTodo(this)");
+
+  li.appendChild(label);
+  li.appendChild(input);
 
   li.appendChild(del);
   li.appendChild(edit);
@@ -30,9 +38,18 @@ function deleteAllTodos() {
   ul.innerHTML = "";
 }
 
+var count = 0;
 function editTodo(e) {
+  if (count == 0) {
+    e.parentNode.classList = "editMode";
+
+    // e.parentNode.firstChild.innerHTML = "bison";
+    count = 1;
+  } else {
+    e.parentNode.classList.remove("editMode");
+    count = 0;
+  }
   console.log(e.parentNode);
-  e.parentNode.firstChild.innerHTML = "<input type='text' />";
 }
 
 function deleteTodo(e) {
