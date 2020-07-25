@@ -11,8 +11,7 @@ function addNewTodo() {
   input.classList = "edity";
 
   let del = document.createElement("button");
-  var delText =
-    "<span  onclick='deleteTodo(this)'><i class='fa fa-trash'></i></span>";
+  var delText = "<span'><i class='fa fa-trash'></i></span>";
   let edit = document.createElement("button");
   var editText = "<span><i class='fa fa-pencil'></i></span>";
 
@@ -22,6 +21,8 @@ function addNewTodo() {
   del.setAttribute("onclick", "deleteTodo(this)");
   edit.setAttribute("onclick", "editTodo(this)");
 
+  label.setAttribute("onclick", "completedTodo(this)");
+
   li.appendChild(label);
   li.appendChild(input);
 
@@ -29,9 +30,8 @@ function addNewTodo() {
   li.appendChild(edit);
 
   ul.appendChild(li);
-  todo_item.value = "";
-  console.log(li);
-  console.log(todo_item.value);
+
+  // todo_item.value = "";
 }
 
 function deleteAllTodos() {
@@ -42,18 +42,25 @@ var count = 0;
 function editTodo(e) {
   if (count == 0) {
     e.parentNode.classList = "editMode";
+    e.parentNode.children[1].value = e.parentNode.firstChild.textContent;
 
-    // e.parentNode.firstChild.innerHTML = "bison";
     count = 1;
   } else {
     e.parentNode.classList.remove("editMode");
+    e.parentNode.firstChild.textContent = e.parentNode.children[1].value;
     count = 0;
   }
-  console.log(e.parentNode);
 }
 
 function deleteTodo(e) {
+  e.stopPropagation();
   e.parentNode.remove();
 }
 
-function completedTodo() {}
+function completedTodo(e) {
+  if (e.classList[0] == "completed") {
+    e.classList.remove("completed");
+  } else {
+    e.classList = "completed";
+  }
+}

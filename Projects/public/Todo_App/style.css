@@ -14,3 +14,38 @@ label,
 .edity {
   max-width: 200px;
 }
+
+.completed {
+  text-decoration: line-through;
+}
+
+body {
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+input {
+  border: none;
+  border-bottom: 2px solid grey;
+  transform-origin: left;
+  transition-duration: 1s;
+  transition-property: all;
+}
+
+input:focus {
+  outline: none;
+  border: none;
+}
+
+input::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2px;
+  width: 100px;
+  background-color: red;
+}
