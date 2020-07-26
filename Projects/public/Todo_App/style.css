@@ -10,49 +10,123 @@ ul li.editMode input {
   display: block;
 }
 
+li {
+  margin: 10px 5px;
+  padding: 5px 10px;
+  background-color: #e1bee7;
+  border-radius: 5px;
+}
+
 label,
 .edity {
-  max-width: 200px;
+  flex: 1;
+  text-align: left;
+}
+label {
+  font-size: 24px;
+  padding: 10px;
+  border-bottom: 2px solid transparent;
+}
+
+label:hover {
+  cursor: pointer;
 }
 
 .completed {
   text-decoration: line-through;
+  color: grey;
 }
 
 body {
   text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #e1bee7;
+  background-image: linear-gradient(62deg, #e1bee7 0%, #ce93d8 100%);
 }
 
 li {
   list-style-type: none;
+  display: flex;
+}
+
+ul {
+  padding: 10px;
 }
 
 h1 {
   font-size: 3rem;
+  color: #a021c7;
+  text-shadow: 2px 2px 3px grey;
 }
 
 input {
   border: none;
-  border-bottom: 2px solid grey;
+  font-size: 24px;
+  padding: 10px;
+  background-color: transparent;
+  border-bottom: 3px solid #ce93d8;
 }
 
 input:focus {
   outline: none;
   border: none;
-  border-bottom: 2px solid red;
+  border-bottom: 3px solid #9b4cd8;
+}
+
+input::placeholder {
+  color: lightgray;
 }
 
 .listBox {
   max-width: 500px;
-  border: 2px solid red;
-  margin: 0 auto;
+  border: 5px solid #c883fc;
+  border-radius: 10px;
+  margin: 20px auto;
 }
 
-.listBox > ul {
-  border: 2px solid green;
+button {
+  font-size: 24px;
+  color: #a200ff;
+  margin: 0px 5px;
+  background-color: #e2a5ec;
+  border-radius: 50%;
+  padding: 10px;
+  border-color: transparent;
 }
 
-.listBox > ul > li {
-  display: flex;
-  justify-content: space-between;
+button:hover {
+  box-shadow: 1px 1px 2px #7200ca;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+.fa-plus,
+.fa-undo {
+  color: #7200ca;
+  font-size: 24px;
+  transform: translateY(4px);
+  margin: 10px 5px;
+  padding: 10px;
+  background-color: #e1bee7;
+  border-radius: 50%;
+}
+
+.fa-plus:hover,
+.fa-undo:hover {
+  color: #aa00ff;
+  box-shadow: 1px 1px 3px grey;
+  cursor: pointer;
+}
+
+p {
+  background-color: #a200ff;
+  color: white;
+  max-width: 400px;
+  font-size: 18px;
+  margin: 20px auto;
+  padding: 10px 0px;
+  border-radius: 50px;
 }
