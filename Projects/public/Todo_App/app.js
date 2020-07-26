@@ -38,17 +38,13 @@ function deleteAllTodos() {
   ul.innerHTML = "";
 }
 
-var count = 0;
 function editTodo(e) {
-  if (count == 0) {
+  if (e.parentNode.classList !== "editMode") {
     e.parentNode.classList = "editMode";
     e.parentNode.children[1].value = e.parentNode.firstChild.textContent;
-
-    count = 1;
   } else {
     e.parentNode.classList.remove("editMode");
     e.parentNode.firstChild.textContent = e.parentNode.children[1].value;
-    count = 0;
   }
 }
 

@@ -23,6 +23,10 @@ body {
   text-align: center;
 }
 
+li {
+  list-style-type: none;
+}
+
 h1 {
   font-size: 3rem;
 }
@@ -30,22 +34,25 @@ h1 {
 input {
   border: none;
   border-bottom: 2px solid grey;
-  transform-origin: left;
-  transition-duration: 1s;
-  transition-property: all;
 }
 
 input:focus {
   outline: none;
   border: none;
+  border-bottom: 2px solid red;
 }
 
-input::after {
-  content: " ";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 2px;
-  width: 100px;
-  background-color: red;
+.listBox {
+  max-width: 500px;
+  border: 2px solid red;
+  margin: 0 auto;
+}
+
+.listBox > ul {
+  border: 2px solid green;
+}
+
+.listBox > ul > li {
+  display: flex;
+  justify-content: space-between;
 }
