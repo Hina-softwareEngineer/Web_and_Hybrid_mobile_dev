@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-database.js"></script>
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyCkBxcFAQ7qE9FDWGRwZlS5ZRYTGLoAm2s",
+        authDomain: "web-and-mobileapps.firebaseapp.com",
+        databaseURL: "https://web-and-mobileapps.firebaseio.com",
+        projectId: "web-and-mobileapps",
+        storageBucket: "web-and-mobileapps.appspot.com",
+        messagingSenderId: "987032435360",
+        appId: "1:987032435360:web:14002d3ec32e9120c267c5",
+        measurementId: "G-7ZJWTMSR6F",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+  </head>
+  <body>
+    <input type="text" class="first_name" />
+    <input type="text" class="age" />
+    <button onclick="save_data()">Save Button</button>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
