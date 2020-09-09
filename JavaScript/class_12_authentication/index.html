@@ -4,8 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-auth.js"></script>
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyCkBxcFAQ7qE9FDWGRwZlS5ZRYTGLoAm2s",
+        authDomain: "web-and-mobileapps.firebaseapp.com",
+        databaseURL: "https://web-and-mobileapps.firebaseio.com",
+        projectId: "web-and-mobileapps",
+        storageBucket: "web-and-mobileapps.appspot.com",
+        messagingSenderId: "987032435360",
+        appId: "1:987032435360:web:14002d3ec32e9120c267c5",
+        measurementId: "G-7ZJWTMSR6F",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
   </head>
   <body>
+    <div class="form">
+      <input type="email" id="email" placeholder="Enter email" name="email" />
+      <input
+        type="password"
+        id="password"
+        placeholder="Enter password"
+        name="password"
+      />
+      <button onclick="signup()">Sign UP</button>
+      <button onclick="login()">Login</button>
+    </div>
+
+    <button onclick="signout()">Sign out</button>
+
     <script src="./app.js"></script>
   </body>
 </html>
